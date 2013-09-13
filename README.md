@@ -1,10 +1,10 @@
 # Region Ile-de-France
 
 ```
-        _   .--------------------------.
-      _|o|_ |    Application bring,    |
-       (_)  |  with the amazin Yeoman! |
-     / \Y/ \;-,________________________|
+        _   .--------------------------------.
+      _|o|_ |    Application bring to you    |
+       (_)  |  	 with the amazing Yeoman!    |
+     / \Y/ \;-,______________________________|
     ||  :  |\//
     (| --- |
       |_|_|
