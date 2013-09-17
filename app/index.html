@@ -16,7 +16,10 @@
   <body ng-app="idfPnrApp">
 
     <!-- Add your site or application content here -->
-    <div class="content" ng-view=""></div>
+    <div class="content">
+      <div ng-include="'views/menu.html'"></div>
+      <div ng-view="" class="view"></div>
+    </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
     <script>
@@ -30,6 +33,7 @@
     </script>
 
     <script src="bower_components/jquery/jquery.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
     <script src="bower_components/angular/angular.js"></script>
 
     <!-- build:js scripts/modules.js -->
@@ -40,6 +44,11 @@
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="scripts/app.js"></script>
     <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/menu.js"></script>
+    <script src="scripts/controllers/comprendre.js"></script>
+    <script src="scripts/controllers/explorer.js"></script>
+    <script src="scripts/controllers/comparer.js"></script>
+    <script src="scripts/controllers/revoir.js"></script>
     <!-- endbuild -->
 </body>
 </html>

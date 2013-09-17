@@ -1,11 +1,39 @@
 @import "variables";
+@import "tools";
 @import "sass-bootstrap/lib/bootstrap";
 
 
 $content-width:940px;
-$content-height:620px;
+$content-height:600px;
+$menu-width:235px;
+
+$zindex-content:100;
+$zindex-view:$zindex-content+100;
+$zindex-menu:$zindex-view+100;
+
+body {
+	background: #efefef;
+	
+	.text-indicator {
+		font-weight:bold;
+	}
+
+	.text-intro {
+		font-size: 11px;
+		line-height:13px;
+		color: $brand-primary;
+		font-style: italic;
+		font-weight: 300;
+		text-align:center;
+	}
+
+	.nowrap {
+		white-space:nowrap;
+	}
+}
 
 .content {
+	z-index:$zindex-content;
 	width:$content-width;
 	height:$content-height;
 	margin-left:-1px*$content-width/2px;
@@ -13,5 +41,275 @@ $content-height:620px;
 	position: absolute;
 	top:50%;
 	left:50%;
-	background:$gray-lighter;
+}
+
+menu {
+	$title-height:150px;
+	$heading-height:35px;
+		
+	z-index:$zindex-menu;
+	margin:0;
+	width:$menu-width;
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	background:#fff;
+	
+	h1 {
+		position:absolute;
+		top:0;
+		left:0;
+		margin:0;
+		padding:0;
+		width:100%;	
+		height:$title-height;	
+		background:url("../images/title.png") 0 0 no-repeat;
+		
+		a {
+			height:100%;
+			width:100%;
+			display:block;
+			position:relative;
+			z-index:$zindex-menu+10;
+		}
+	}
+
+	.links {
+		position:absolute;
+		left:0;
+		right:0;
+		top:auto;	
+		bottom:0;	
+		margin:0;
+		padding:0;
+		
+		.menu-part {
+			z-index:$zindex-menu+20;
+			position:relative;
+			display:block;
+			height:$heading-height;
+			padding:0;
+			margin:0;			
+			background:url("../images/heading-shadow.png") left bottom repeat-x white;
+			height:$heading-height;			
+			text-align:center;
+			overflow:hidden;
+			@include transition(height 0.4s linear);
+			
+			&.open {				
+				height:$content-height - ($heading-height*3) - 90;				
+			}
+				
+			.heading {
+				display:block;
+				text-align:center;
+				height:$heading-height;
+				line-height:$heading-height;
+				text-transform:uppercase;
+				color:$brand-primary;
+
+				font-size: 14px;
+				font-weight: bold;
+
+			}
+
+			&.main {
+				z-index:$zindex-menu;
+				background-color:transparent;				
+				img {					
+					margin-top:90px;
+				}
+			}
+
+			h4 {
+				font-size: 11px;
+				color: #333333;
+				text-transform: uppercase;		
+				font-weight:bold;	
+				margin-bottom:0;	
+				color:inherit;
+			}
+
+			.menu-body {
+
+				li {
+					margin:5px 10px;
+					
+					&.active .btn.btn-default {
+						background:#a0adb0;
+						border-color:#a0adb0;
+						color:white;
+						@include box-shadow(0 6px 6px #8a969a inset);
+						.pic .on {
+							display:none;
+						}
+						.pic .off {
+							display:inline;
+						}
+					}
+
+					a.btn {			
+						text-align:left;
+						padding-left:45px;
+						position:relative;
+						line-height:23px;
+						
+						.pic {
+							position:absolute;
+							top:0;
+							bottom:0;
+							left:5px;
+							display:block;
+							width:35px;
+							text-align:center;	
+							line-height:25px;							
+													
+							.off {
+								display:none;
+							}
+						}						
+					}
+				}
+			}
+		}
+	}
+		
+}
+
+.view {	
+	z-index:$zindex-view;
+	background:$gray;
+	position:absolute;
+	top:0;
+	left:$menu-width;
+	right:0;
+	bottom:0;
+	display:block;	
+	
+	.bg {
+		position:absolute;
+		top:0;
+		left:0;
+		z-index:$zindex-view;
+	}
+
+	.fg {		
+		position:relative;
+		z-index:$zindex-view+50;	
+	}
+
+	.hotspots {
+		position:absolute;
+		top:0;
+		left:0;
+		
+		li {
+			position:absolute;
+			top:0;
+			left:0;
+			display:block;
+		}
+	}
+}
+
+
+
+.main-view {
+
+	.infobox {
+		position:absolute;
+		top:50%;
+		left:50%;
+		margin-left:-410px*0.5;
+		margin-top:-190px*0.5;
+		background:white;	
+		width:410px;
+		min-height:190px;
+		padding:10px 25px;	
+  		border-radius: 6px;  	
+  		font-size:13px;	
+  		padding-bottom:45px;
+  		@include box-shadow(0 0 15px 0 #333);  		  
+  		
+  		h3 {
+  			padding:0;
+  			margin:0;
+  			text-align:center;
+  			text-transform:uppercase;
+  			color:$brand-primary;
+  			font-size:14px;
+  			font-weight:bold;
+  		}		
+
+  		.close {
+  			background:url("../images/btn_close.png") no-repeat;
+  			width:15px;
+  			height:15px;
+  			position:absolute;
+  			right:10px;
+  			top:10px;
+  			@include opacity(1);
+  		}
+
+  		.btn {
+  			width:220px;
+  			position:absolute;
+  			bottom:10px;
+  			left:50%;
+  			margin-left:-1px*220px/2px;
+  		}
+	}
+
+	.hotspots {
+
+		li {
+			height:100px;
+			width:100px;
+			
+			a {
+				width:100%;
+				height:100%;
+				display:block;
+			}
+			
+			&.gatinais-francais {
+				left:495px-$menu-width;
+				top:365px; 
+				width:145px;
+				height:142px;
+			}
+			&.haute-vallee-de-chevreuse {
+				left:328px-$menu-width;
+				top:242px; 
+				width:166px;
+				height:123px;
+			}
+			&.oise-pays-de-france {
+				left:523px-$menu-width;
+				top:18px; 
+				width:148px;
+				height:127px;
+			}
+			&.vexin-francais {
+				left:306px-$menu-width;
+				top:54px; 
+				width:196px;
+				height:127px;
+			}
+			&.brie-et-deux-morin {
+				left:676px-$menu-width;
+				top:106px; 
+				width:187px;
+				height:201px;
+			}
+			&.bocage-gatinais {
+				left:652px-$menu-width;
+				top:438px; 
+				width:153px;
+				height:147px;
+			}
+
+		}
+	}
 }

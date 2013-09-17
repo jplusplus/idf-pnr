@@ -1,0 +1,90 @@
+<menu ng-controller="MenuCtrl">
+	<h1>
+		<a ng-href="#/">
+			<span class="sr-only">
+				Les Parcs naturels régionaux en Île-de-France
+			</span>
+		</a>
+	</h1>	
+	<ul class="links list-unstyled">
+		<li ng-class="{open: current == 'main'}" class="main menu-part">
+			<img src="./images/info_main.png" alt="" />
+		</li>
+		<li ng-class="{open: current == 'comprendre'}"  class="comprendre menu-part">
+			<a class="heading" href="#/comprendre">Comprendre</a>
+			<div class="menu-body">
+				<p class="text-intro">
+					Au-delà de la protection de la nature,<br />
+					ces Parcs sont également des lieux<br />
+					de vie et d'activités économiques.
+				</p>
+				<h4 class="top20">Choisissez une catégorie</h4>
+				<ul class="list-unstyled">
+					<li ng-class="{active: categorie == 'biodiversite'}">
+						<a class="btn btn-default btn-block btn-xs" ng-href="#/comprendre?categorie=biodiversite">
+							<span class="pic">
+								<img src="images/comprendre/pic_biodiversite-black.png" class="on"  />
+								<img src="images/comprendre/pic_biodiversite-white.png" class="off" />
+							</span>
+							Densité de population
+						</a>
+					</li>
+					<li ng-class="{active: categorie == 'densitepop'}">
+						<a class="btn btn-default btn-block btn-xs" ng-href="#/comprendre?categorie=densitepop">
+							<span class="pic">
+								<img src="images/comprendre/pic_densitepop-black.png" class="on"  />
+								<img src="images/comprendre/pic_densitepop-white.png" class="off" />
+							</span>
+							Zones d'activités
+						</a>
+					</li>
+					<li ng-class="{active: categorie == 'terroirs'}">
+						<a class="btn btn-default btn-block btn-xs" ng-href="#/comprendre?categorie=terroirs">
+							<span class="pic">
+								<img src="images/comprendre/pic_terroirs-black.png" class="on"  />
+								<img src="images/comprendre/pic_terroirs-white.png" class="off" />
+							</span>
+							Zone habitée
+						</a>
+					</li>
+					<li ng-class="{active: categorie == 'zoneactivite'}">
+						<a class="btn btn-default btn-block btn-xs" ng-href="#/comprendre?categorie=zoneactivite">
+							<span class="pic">
+								<img src="images/comprendre/pic_zoneactivite-black.png" class="on"  />
+								<img src="images/comprendre/pic_zoneactivite-white.png" class="off" />
+							</span>
+							Biodiversité florale
+						</a>
+					</li>
+					<li ng-class="{active: categorie == 'zonehabitee'}">
+						<a class="btn btn-default btn-block btn-xs" ng-href="#/comprendre?categorie=zonehabitee">
+							<span class="pic">
+								<img src="images/comprendre/pic_zonehabitee-black.png" class="on"  />
+								<img src="images/comprendre/pic_zonehabitee-white.png" class="off" />
+							</span>
+							Zone d'intérêt écologique
+						</a>
+					</li>
+					<li ng-class="{active: categorie == 'zoneinteret'}">
+						<a class="btn btn-default btn-block btn-xs" ng-href="#/comprendre?categorie=zoneinteret">
+							<span class="pic">
+								<img src="images/comprendre/pic_zoneinteret-black.png" class="on"  />
+								<img src="images/comprendre/pic_zoneinteret-white.png" class="off" />
+							</span>
+							Le terroirs
+						</a>
+					</li>
+				</ul>
+			</div>
+		</li>
+		<li ng-class="{open: current == 'explorer'}"  class="explorer menu-part">
+			<a class="heading" href="#/explorer">Explorer</a>
+		</li>
+		<li ng-class="{open: current == 'comparer'}"  class="comparer menu-part">
+			<a class="heading" href="#/comparer">Comparer</a>
+		</li>
+		<li ng-class="{open: current == 'revoir'}"  class="revoir menu-part">
+			<a class="heading" href="#/revoir">Revoir</a>
+		</li>
+	</ul>
+</menu>
