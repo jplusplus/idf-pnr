@@ -166,6 +166,75 @@
 		</li>
 		<li ng-class="{open: current == 'comparer'}"  class="comparer menu-part">
 			<a class="heading" href="#/comparer">Comparer</a>
+			<div class="menu-body">
+				<p class="text-intro">
+					Comment se situe l'Île-de-France par<br />
+					rapport aux autres régions françaises ?
+				</p>
+				<h4 class="top10">
+					<span class="badge">1</span>
+					Choisissez un thème
+				</h4>			
+				<ul class="list-unstyled">
+					<li ng-class="{active: theme == 'superficie'}">
+						<a class="btn btn-default btn-block btn-xs" ng-click="search('theme', 'superficie')">
+							<span class="pic">
+								<img src="images/comparer/pic_superficie-black.png" class="on"  />
+								<img src="images/comparer/pic_superficie-white.png" class="off" />
+							</span>
+							Superficie
+						</a>
+					</li>
+					<li ng-class="{active: theme == 'habitants'}">
+						<a class="btn btn-default btn-block btn-xs" ng-click="search('theme', 'habitants')">
+							<span class="pic">
+								<img src="images/comparer/pic_habitants-black.png" class="on"  />
+								<img src="images/comparer/pic_habitants-white.png" class="off" />
+							</span>
+							Nombre d'habitants
+						</a>
+					</li>
+					<li ng-class="{active: theme == 'exploitation'}">
+						<a class="btn btn-default btn-block btn-xs" ng-click="search('theme', 'exploitation')">
+							<span class="pic">
+								<img src="images/comparer/pic_exploitation-black.png" class="on"  />
+								<img src="images/comparer/pic_exploitation-white.png" class="off" />
+							</span>
+							Exploitations agricoles
+						</a>
+					</li>
+					<li ng-class="{active: theme == 'resistance'}">
+						<a class="btn btn-default btn-block btn-xs" ng-click="search('theme', 'resistance')">
+							<span class="pic">
+								<img src="images/comparer/pic_resistance-black.png" class="on"  />
+								<img src="images/comparer/pic_resistance-white.png" class="off" />
+							</span>
+							Résistance du Parc
+						</a>
+					</li>
+					<li ng-class="{active: theme == 'emplois'}">
+						<a class="btn btn-default btn-block btn-xs" ng-click="search('theme', 'emplois')">
+							<span class="pic">
+								<img src="images/comparer/pic_emplois-black.png" class="on"  />
+								<img src="images/comparer/pic_emplois-white.png" class="off" />
+							</span>
+							Emplois
+						</a>
+					</li>
+				</ul>
+				<h4 class="top10 left10 text-left pull-left">
+					<span class="badge">1</span>
+					Cliquez sur<br />
+					une autre<br />
+					région
+				</h4>
+
+				<div class="france-map" france value="regionSelected"></div>
+				<div class="pull-left small-admin">
+					<a ng-click="search('region', 'Guyane')">Guyane</a>  
+					<a ng-click="search('region', 'Martinique')">Martinique</a>  
+				</div>
+			</div>
 		</li>
 		<li ng-class="{open: current == 'revoir'}"  class="revoir menu-part">
 			<a class="heading" href="#/revoir">Revoir</a>

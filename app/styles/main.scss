@@ -12,7 +12,7 @@ $zindex-view:$zindex-content+100;
 $zindex-menu:$zindex-view+100;
 
 body {
-	background: #efefef;
+	background: #eee;
 	
 	.text-indicator {
 		font-weight:bold;
@@ -268,15 +268,45 @@ menu {
 						}						
 					}
 				}
+
+				.france-map {
+					margin-top:10px;
+					margin-right:10px;
+					width:130px;
+					float:right;
+					position:relative;
+					z-index:$zindex-menu+10;
+					
+					.regions:hover {
+						cursor:pointer;
+						fill: #aaa;
+					}
+				}
+
+				.small-admin {
+					margin-left:20px;
+					margin-top:30px;
+					
+					a {
+						@include hide-text();
+						width:34px;
+						height:34px;
+						display:block;
+						float:left;
+						cursor:pointer;
+						border:1px #e0e4e5 solid;
+						margin-right:-1px;
+					}
+				}
 			}
 		}
-	}
 		
+	}
 }
 
 .view {	
 	z-index:$zindex-view;
-	background:$gray;
+	background:#fff;
 	position:absolute;
 	top:0;
 	left:$menu-width;
