@@ -1,0 +1,140 @@
+{
+	"haute-vallee-de-chevreuse": {
+		"scale": 100,
+		"paris": {
+			"width": 290,
+			"top": 148,
+			"left": 177
+		},
+		"marseille": {
+			"width": 315,
+			"top": 87,
+			"left": 177
+		},
+		"madrid": {
+			"width": 390,
+			"top": 19,
+			"left": 128
+		},
+		"berlin": {
+			"width": 645,
+			"top": 13,
+			"left": 30
+		}
+	},
+	"bocage-gatinais": {
+		"scale": 76,
+		"paris": {
+			"width": 290,
+			"top": 199,
+			"left": 242
+		},
+		"marseille": {
+			"width": 315,
+			"top": 154,
+			"left": 224
+		},
+		"madrid": {
+			"width": 390,
+			"top": 100,
+			"left": 184
+		},
+		"berlin": {
+			"width": 645,
+			"top": 82,
+			"left": 108
+		}
+	},
+	"brie-et-deux-morin": {
+		"scale": 78,
+		"paris": {
+			"width": 290,
+			"top": 219,
+			"left": 259
+		},
+		"marseille": {
+			"width": 315,
+			"top": 163,
+			"left": 226
+		},
+		"madrid": {
+			"width": 390,
+			"top": 118,
+			"left": 189
+		},
+		"berlin": {
+			"width": 645,
+			"top": 84,
+			"left": 127
+		}
+	},
+	"vexin-francais": {
+		"scale": 86,
+		"paris": {
+			"width": 290,
+			"top": 148,
+			"left": 227
+		},
+		"marseille": {
+			"width": 315,
+			"top": 90,
+			"left": 217
+		},
+		"madrid": {
+			"width": 390,
+			"top": 47,
+			"left": 166
+		},
+		"berlin": {
+			"width": 645,
+			"top": 25,
+			"left": 77
+		}
+	},
+	"oise-pays-de-france": {
+		"scale": 87,
+		"paris": {
+			"width": 290,
+			"top": 169,
+			"left": 235
+		},
+		"marseille": {
+			"width": 315,
+			"top": 94,
+			"left": 215
+		},
+		"madrid": {
+			"width": 390,
+			"top": 39,
+			"left": 172
+		},
+		"berlin": {
+			"width": 645,
+			"top": 9,
+			"left": 90
+		}
+	},
+	"gatinais-francais": {
+		"scale": 85,
+		"paris": {
+			"width": 290,
+			"top": 181,
+			"left": 236
+		},
+		"marseille": {
+			"width": 315,
+			"top": 135,
+			"left": 216
+		},
+		"madrid": {
+			"width": 390,
+			"top": 89,
+			"left": 201
+		},
+		"berlin": {
+			"width": 645,
+			"top": 53,
+			"left": 131
+		}
+	}
+}
