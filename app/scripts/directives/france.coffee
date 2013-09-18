@@ -26,6 +26,8 @@ angular.module('idfPnrApp').directive "france", ()->
                             when "Île-de-France" then "#E71A0F"
                             when scope.value["name-1"] then "#98b800"
                             else "#e0e4e5"
+            # Update the draw when the value changes
+            scope.$watch "value", draw, true
             # Load the SVG            
             map.loadMap 'images/france.svg', ->
                 # Adapt map's sizes to the SVG
@@ -43,6 +45,5 @@ angular.module('idfPnrApp').directive "france", ()->
                     scope.click() if typeof(scope.click) is "function"
                     # Set a model value matching to the clicked region
                     if scope.value?        
-                        angular.copy(data, scope.value);
-                        draw()
+                        angular.copy(data, scope.value);                        
                         scope.$apply()

@@ -1,6 +1,6 @@
 'use strict'
 
-angular.module('idfPnrApp', [])
+angular.module('idfPnrApp', ['ui.slider'])
   .config ($routeProvider) ->
     $routeProvider
       .when '/',
@@ -25,7 +25,7 @@ angular.module('idfPnrApp', [])
         slug: "comparer"
       .when '/revoir',
         templateUrl: 'views/revoir.html'        
-        controller: 'ComprendreCtrl'
+        controller: 'RevoirCtrl'
         reloadOnSearch: false
         slug: "revoir"
       .otherwise

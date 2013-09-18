@@ -6,6 +6,8 @@
     "underscore": "1.5.2",
     "json3": "~3.2.4",
     "jquery": "~1.9.1",
+    "jquery-ui": "~1.10.x",
+    "angular-ui-slider": "0.0.1",
     "sass-bootstrap": "~3.0.0",
     "es5-shim": "~2.0.8",
     "raphael": "2.1.2",

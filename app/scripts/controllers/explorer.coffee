@@ -9,7 +9,8 @@ angular.module('idfPnrApp')
             $scope.parc      = $routeParams.parc
             $scope.metropole = $routeParams.metropole     
         $scope.get = ->             
-            $scope.data[$scope.parc][$scope.metropole] if $scope.data?
+            if $scope.data? and $scope.parc? and $scope.metropole?
+                $scope.data[$scope.parc][$scope.metropole] 
         $scope.metropoleStyle = ->
             style = $scope.get()
             return {} unless style?

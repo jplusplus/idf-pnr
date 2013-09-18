@@ -100,7 +100,7 @@ menu {
 			&.open {				
 				height:$content-height - ($heading-height*3) - 90;				
 			}
-				
+
 			.heading {
 				display:block;
 				text-align:center;
@@ -111,7 +111,6 @@ menu {
 
 				font-size: 14px;
 				font-weight: bold;
-
 			}
 
 			&.main {
@@ -120,6 +119,14 @@ menu {
 				img {					
 					margin-top:90px;
 				}
+
+				.heading {
+					display:none;
+				}				
+			}
+
+			&.revoir {
+				background:white;				
 			}
 
 			h4 {
@@ -296,6 +303,81 @@ menu {
 						cursor:pointer;
 						border:1px #e0e4e5 solid;
 						margin-right:-1px;
+						
+						&.guyane {
+							background:url("../images/comparer/guyane.png");
+						}
+
+						&.martinique {
+							background:url("../images/comparer/martinique.png");
+						}
+
+						&:hover {
+							background-position:0 -34px;
+						}
+
+						&.active {
+							background-position:0 -34px*2;
+						}
+					}					
+				}
+
+				.annees {
+					font-size:10px;
+					margin:0 20px;
+					position:relative;
+					
+					li {
+						cursor: pointer;
+						padding:0;
+						margin:0;
+						line-height:12px;
+						white-space:nowrap;
+						
+						&.even {
+							background:#e0e4e5;	
+							line-height:11px;
+						}
+
+						.annee {
+							text-align:right;
+							color:inherit;
+						}
+
+						.count {
+							color:#98b800;
+							font-size:25px;
+							text-align:left;
+							letter-spacing:-1px;
+						}
+
+					}
+					
+					.slider-track {
+						position:absolute;
+						left:40%;
+						top:-1px;
+						width:10px;
+						height:325px;
+						background:url("../images/revoir/slider-track.png") no-repeat;						
+						.ui-slider {
+							position:absolute;
+							left:1px;
+							top:10px;
+							bottom:3px;
+							height:auto;
+							background:none;
+							border:none;
+							
+							.ui-slider-handle {
+								border:0;
+								background:url("../images/revoir/slider-cursor.png") no-repeat 0 0;
+								width:30px;
+								height:20px;
+								left:-11px;
+							}
+						}
+
 					}
 				}
 			}
@@ -306,7 +388,7 @@ menu {
 
 .view {	
 	z-index:$zindex-view;
-	background:#fff;
+	background:url("../images/view-shadow.png") repeat-y #e0e4e5;
 	position:absolute;
 	top:0;
 	left:$menu-width;
@@ -447,5 +529,13 @@ menu {
 		position:absolute;
 		top:0;
 		left:0;
+	}
+}
+
+.revoir-view {
+	.annees, .annee {
+		position:absolute;
+		top:0;
+		left:0;			
 	}
 }
