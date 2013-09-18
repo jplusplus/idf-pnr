@@ -1,7 +1,4 @@
-'use strict'
-
-angular.module('idfPnrApp')
-    .controller 'MenuCtrl', ($scope, $route, $location, $http) ->
+MenuCtrl = ($scope, $route, $location, $http) ->
         # Extracts parameters from location's search
         readLoaction = ->
             $scope.categorie                = $location.search().categorie
@@ -52,3 +49,6 @@ angular.module('idfPnrApp')
         $scope.view = (item)-> "views/menu-#{item}.html"
         # Create an arbitrary array
         $scope.range = (len)-> new Array(len)
+
+MenuCtrl.$inject = ['$scope', '$route', '$location', '$http']
+angular.module('idfPnrApp').controller 'MenuCtrl', MenuCtrl

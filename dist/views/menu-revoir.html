@@ -1,0 +1,21 @@
+<div class="menu-body">
+	<p class="text-intro">
+		Découvrez l'historique des Parcs<br>
+		par date de création
+	</p>
+	<div class="annees">
+		<ul class="list-unstyled">
+			<li ng-repeat="(annee, count) in annee.list" class="row" ng-class="{even: $index%2 == 0}" ng-click="search('annee', annee)">
+				<span class="col-xs-5 annee">
+					{{annee}}
+				</span>
+				<div class="col-xs-7 text-left count">
+					<span ng-repeat="i in range(count)">&bullet;</span>
+				</div>
+			</li>
+		</ul>
+		<div class="slider-track">
+			<div ui-slider="{orientation: 'vertical' }" min="0" max="27" step="1" ng-model="annee.tick"></div>		
+		</div>
+	</div>
+</div>

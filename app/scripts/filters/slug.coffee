@@ -1,5 +1,5 @@
 angular.module('idfPnrApp')
-	.filter 'slug', () ->
+	.filter 'slug', [() ->
 		slug = (value)->
 			rExps = [
               re: /[\xC0-\xC6]/g
@@ -48,3 +48,4 @@ angular.module('idfPnrApp')
                 i++          
             value.toLowerCase().replace(/\s+/g, "-").replace(/[^a-z0-9-]/g, "").replace /\-{2,}/g, "-"
 		(input)->slug(input)
+]

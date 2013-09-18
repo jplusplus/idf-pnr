@@ -11,9 +11,15 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
+      'app/bower_components/jquery/jquery.js',
+      'app/bower_components/jquery-ui/ui/jquery-ui.js',
+      'app/bower_components/jquery-ui/ui/jquery.ui.slider.js',
+      'app/bower_components/underscore/underscore.js',
       'app/bower_components/angular/angular.js',
       'app/bower_components/angular-mocks/angular-mocks.js',
       'app/bower_components/angular-ui-slider/src/slider.js',
+      'app/bower_components/raphael/raphael.js',
+      'app/bower_components/kartograph/kartograph.min.js',
       'app/scripts/*.coffee',
       'app/scripts/**/*.coffee',
       'test/mock/**/*.coffee',
@@ -21,7 +27,7 @@ module.exports = function(config) {
     ],
 
     // list of files / patterns to exclude
-    exclude: [".min.js"],
+    exclude: [],
 
     // web server port
     port: 8080,
@@ -43,7 +49,7 @@ module.exports = function(config) {
     // - Safari (only Mac)
     // - PhantomJS
     // - IE (only Windows)
-    browsers: ['Chrome'],
+    browsers: ['Firefox'],
 
 
     // Continuous Integration mode

@@ -13,4 +13,4 @@ describe 'Directive: france', () ->
   it 'should make hidden element visible', inject ($compile) ->
     element = angular.element '<france></france>'
     element = $compile(element) scope
-    expect(element.text()).toBe 'this is the france directive'
+    expect(element.text()).toBe ''

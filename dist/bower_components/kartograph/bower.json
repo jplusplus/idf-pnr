@@ -1,0 +1,8 @@
+{
+  "name": "kartograph",
+  "version": "0.7.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kartograph/kartograph.js"
+  }
+}

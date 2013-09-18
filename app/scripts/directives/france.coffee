@@ -1,4 +1,4 @@
-angular.module('idfPnrApp').directive "france", ()-> 
+angular.module('idfPnrApp').directive "france", [()-> 
     scope:
         # What to when clicking a region
         click: "&"
@@ -47,3 +47,4 @@ angular.module('idfPnrApp').directive "france", ()->
                     if scope.value?        
                         angular.copy(data, scope.value);                        
                         scope.$apply()
+]

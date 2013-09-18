@@ -1,0 +1,86 @@
+[
+  {
+    "region": "Haute-Normandie",
+    "taux": 0.26
+  },
+  {
+    "region": "Picardie",
+    "taux": 0.23
+  },
+  {
+    "region": "Nord-Pas-de-Calais",
+    "taux": 0.20
+  },
+  {
+    "region": "Pays-de-la-Loire",
+    "taux": 0.16
+  },
+  {
+    "region": "Aquitaine",
+    "taux": 0.14
+  },
+  {
+    "region": "Languedoc-Roussillon",
+    "taux": 0.13
+  },
+  {
+    "region": "Lorraine",
+    "taux": 0.12
+  },
+  {
+    "region": "Île de France",
+    "taux": 0.10
+  },
+  {
+    "region": "Champagne-Ardenne",
+    "taux": 0.10
+  },
+  {
+    "region": "Bretagne",
+    "taux": 0.09
+  },
+  {
+    "region": "Limousin",
+    "taux": 0.07
+  },
+  {
+    "region": "Centre",
+    "taux": 0.07
+  },
+  {
+    "region": "Basse-Normandie",
+    "taux": 0.04
+  },
+  {
+    "region": "Alsace",
+    "taux": 0.04
+  },
+  {
+    "region": "Provence-Alpes-Côte-d'Azur",
+    "taux": 0.04
+  },
+  {
+    "region": "Franche-Comté",
+    "taux": 0.03
+  },
+  {
+    "region": "Midi-Pyrénées",
+    "taux": 0.03
+  },
+  {
+    "region": "Auvergne",
+    "taux": 0.03
+  },
+  {
+    "region": "Rhône-Alpes",
+    "taux": 0.02
+  },
+  {
+    "region": "Corse",
+    "taux": 0.01
+  },
+  {
+    "region":" Bourgogne ",
+    " taux ":"0"
+  }
+]

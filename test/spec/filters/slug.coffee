@@ -11,5 +11,5 @@ describe 'Filter: slug', () ->
     slug = $filter 'slug'
 
   it 'should return the input prefixed with "slug filter:"', () ->
-    text = 'angularjs'
-    expect(slug text).toBe ('slug filter: ' + text)
+    text = 'angularjs 4'
+    expect(slug text).toBe ('angularjs-4')

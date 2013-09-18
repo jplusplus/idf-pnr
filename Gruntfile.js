@@ -127,7 +127,7 @@ module.exports = function (grunt) {
       options: {
         jshintrc: '.jshintrc'
       },
-      files: [
+      all: [
         'Gruntfile.js',
         '<%= yeoman.app %>/scripts/{,*/}*.js'
       ]
@@ -285,8 +285,9 @@ module.exports = function (grunt) {
             '*.{ico,png,txt}',
             '.htaccess',
             'bower_components/**/*',
-            'images/{,*/}*.{gif,webp}',
-            'styles/fonts/*'
+            'images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
+            'styles/fonts/*',
+            'data/*'
           ]
         }, {
           expand: true,
