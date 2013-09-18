@@ -12,7 +12,8 @@
     "es5-shim": "~2.0.8",
     "raphael": "2.1.2",
     "angular-resource": "~1.0.7",
-    "angular-sanitize": "~1.0.7"
+    "angular-sanitize": "~1.0.7",
+    "kartograph": "git://github.com/kartograph/kartograph.js"
   },
   "devDependencies": {
     "angular-mocks": "~1.0.7",
