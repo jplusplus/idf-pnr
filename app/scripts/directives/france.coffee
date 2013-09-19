@@ -41,6 +41,7 @@ angular.module('idfPnrApp').directive "france", [()->
                 draw()
                 # Bind layer click
                 map.getLayer('regions').on 'click', (data)->  
+                    data = {} if data["name-1"] is "Île-de-France"
                     # Do we received a click function?
                     scope.click() if typeof(scope.click) is "function"
                     # Set a model value matching to the clicked region

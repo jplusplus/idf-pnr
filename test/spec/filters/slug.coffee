@@ -10,6 +10,6 @@ describe 'Filter: slug', () ->
   beforeEach inject ($filter) ->
     slug = $filter 'slug'
 
-  it 'should return the input prefixed with "slug filter:"', () ->
+  it 'should return the input slugifier', () ->
     text = 'angularjs 4'
     expect(slug text).toBe ('angularjs-4')

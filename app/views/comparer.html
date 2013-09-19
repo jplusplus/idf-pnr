@@ -1,5 +1,30 @@
-<div class="comparer-view">
+<div class="comparer-view region-{{region}} theme-{{theme}}">
 	<img ng-src="./images/comparer/graphe_{{theme}}.png" class="bg" ng-show="theme" />		
-	{{region}} - {{theme}}
-	{{get(region, theme)}}
+	<div class="viz">
+		<div class="bar idf" ng-style="style(base, theme)">
+			<h4 ng-class="{outside: isOutside(base, theme) }">
+				{{base}}
+				<span class="indicator">
+					{{get(base, theme)|number}}
+					<span ng-show="get(base, theme) < 100">%</span>
+				</span>
+			</h4>
+		</div>
+		<div class="bar" ng-style="style(region, theme)" ng-show="region">
+			<h4 ng-class="{outside: isOutside(region, theme) }">
+				{{region}}
+				<span class="indicator">
+					{{get(region, theme)|number}}
+					<span ng-show="get(region, theme) < 100">%</span>
+				</span>
+			</h4>
+		</div>
+		<div ng-hide="region" class="choose">
+			Choisissez<br />
+			une région<br />
+			sur la carte<br />
+			(à gauche)
+		</div>
+		<div class="legend" ng-style="legendStyle()" ng-bind-html-unsafe="legend[theme]"></div>
+	</div>
 </div>
