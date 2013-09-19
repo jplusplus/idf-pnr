@@ -414,10 +414,12 @@ menu {
 		left:0;
 		
 		li {
+			background:url("../images/iefix.gif");
 			position:absolute;
 			top:0;
 			left:0;
-			display:block;
+			display:block;			
+			margin:0 !important;
 		}
 	}
 }
@@ -472,9 +474,12 @@ menu {
 
 	.hotspots {
 
+		position:absolute;
+
 		li {
 			height:100px;
 			width:100px;
+			display:block;
 			
 			a {
 				width:100%;

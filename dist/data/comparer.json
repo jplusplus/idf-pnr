@@ -1,86 +1,186 @@
 [
   {
-    "region": "Haute-Normandie",
-    "taux": 0.26
+    "region":"Alsace",
+    "superficie":22.97,
+    "exploitation":10.28,
+    "resistance":0.04,
+    "emplois":-2.51,
+    "habitants":152249
   },
   {
-    "region": "Picardie",
-    "taux": 0.23
+    "region":"Aquitaine",
+    "superficie":9.92,
+    "exploitation":24.81,
+    "resistance":0.14,
+    "emplois":-5.83,
+    "habitants":83700
   },
   {
-    "region": "Nord-Pas-de-Calais",
-    "taux": 0.20
+    "region":"Auvergne",
+    "superficie":25.9,
+    "exploitation":7.73,
+    "resistance":0.03,
+    "emplois":-4.12,
+    "habitants":193000
   },
   {
-    "region": "Pays-de-la-Loire",
-    "taux": 0.16
+    "region":"Basse-Normandie",
+    "superficie":23.36,
+    "exploitation":17.32,
+    "resistance":0.04,
+    "emplois":-1.96,
+    "habitants":180518
   },
   {
-    "region": "Aquitaine",
-    "taux": 0.14
+    "region":"Bourgogne",
+    "superficie":9.02,
+    "exploitation":3.98,
+    "resistance":null,
+    "emplois":2.67,
+    "habitants":71000
   },
   {
-    "region": "Languedoc-Roussillon",
-    "taux": 0.13
+    "region":"Bretagne",
+    "superficie":4.63,
+    "exploitation":8.22,
+    "resistance":0.09,
+    "emplois":-6.48,
+    "habitants":65500
   },
   {
-    "region": "Lorraine",
-    "taux": 0.12
+    "region":"Centre",
+    "superficie":10.17,
+    "exploitation":33.41,
+    "resistance":0.07,
+    "emplois":-1.34,
+    "habitants":152716
   },
   {
-    "region": "Île de France",
-    "taux": 0.10
+    "region":"Champagne-Ardenne",
+    "superficie":9.45,
+    "exploitation":33.38,
+    "resistance":0.1,
+    "emplois":-4.83,
+    "habitants":130000
   },
   {
-    "region": "Champagne-Ardenne",
-    "taux": 0.10
+    "region":"Corse",
+    "superficie":40.38,
+    "exploitation":2.69,
+    "resistance":0.01,
+    "emplois":-5.16,
+    "habitants":26700
   },
   {
-    "region": "Bretagne",
-    "taux": 0.09
+    "region":"Franche-Comte",
+    "superficie":12.41,
+    "exploitation":6.21,
+    "resistance":0.03,
+    "emplois":-11.76,
+    "habitants":119268
   },
   {
-    "region": "Limousin",
-    "taux": 0.07
+    "region":"Guyane",
+    "superficie":7.36,
+    "exploitation":null,
+    "resistance":null,
+    "emplois":null,
+    "habitants":21175
   },
   {
-    "region": "Centre",
-    "taux": 0.07
+    "region":"Haute-Normandie",
+    "superficie":6.54,
+    "exploitation":16.26,
+    "resistance":0.26,
+    "emplois":-1.83,
+    "habitants":60300
   },
   {
-    "region": "Basse-Normandie",
-    "taux": 0.04
+    "region":"Île-de-France",
+    "superficie":18.23,
+    "exploitation":72.55,
+    "resistance":0.1,
+    "emplois":2.44,
+    "habitants":305900
   },
   {
-    "region": "Alsace",
-    "taux": 0.04
+    "region":"Languedoc-Roussillon",
+    "superficie":13.02,
+    "exploitation":3.92,
+    "resistance":0.13,
+    "emplois":-5.02,
+    "habitants":88174
   },
   {
-    "region": "Provence-Alpes-Côte-d'Azur",
-    "taux": 0.04
+    "region":"Limousin",
+    "superficie":23.2,
+    "exploitation":6.73,
+    "resistance":0.07,
+    "emplois":-2.61,
+    "habitants":59600
   },
   {
-    "region": "Franche-Comté",
-    "taux": 0.03
+    "region":"Lorraine",
+    "superficie":15.26,
+    "exploitation":16.36,
+    "resistance":0.12,
+    "emplois":-6.23,
+    "habitants":189803
   },
   {
-    "region": "Midi-Pyrénées",
-    "taux": 0.03
+    "region":"Martinique",
+    "superficie":55.85,
+    "exploitation":null,
+    "resistance":null,
+    "emplois":null,
+    "habitants":100000
   },
   {
-    "region": "Auvergne",
-    "taux": 0.03
+    "region":"Midi-Pyrenees",
+    "superficie":20.15,
+    "exploitation":8.8,
+    "resistance":0.03,
+    "emplois":-3.41,
+    "habitants":175326
   },
   {
-    "region": "Rhône-Alpes",
-    "taux": 0.02
+    "region":"Nord/Pas-de-Calais",
+    "superficie":24.61,
+    "exploitation":22.5,
+    "resistance":0.2,
+    "emplois":-4.09,
+    "habitants":507500
   },
   {
-    "region": "Corse",
-    "taux": 0.01
+    "region":"Pays de la Loire",
+    "superficie":1.53,
+    "exploitation":17.6,
+    "resistance":0.16,
+    "emplois":0.57,
+    "habitants":204656
   },
   {
-    "region":" Bourgogne ",
-    " taux ":"0"
+    "region":"Picardie",
+    "superficie":2.52,
+    "exploitation":67.86,
+    "resistance":0.23,
+    "emplois":3.39,
+    "habitants":85639
+  },
+  {
+    "region":"Provence-Alpes-Cote-d'Azur",
+    "superficie":21.13,
+    "exploitation":23.35,
+    "resistance":0.04,
+    "emplois":-0.22,
+    "habitants":306800
+  },
+  {
+    "region":"Rhone-Alpes",
+    "superficie":15.09,
+    "exploitation":9.57,
+    "resistance":0.02,
+    "emplois":-11.68,
+    "habitants":291700
   }
 ]
