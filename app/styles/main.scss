@@ -338,7 +338,6 @@ menu {
 					margin:0 20px;
 					position:relative;
 					
-
 					.lt-ie8 &{
 						margin-left:-30px;
 						margin-right:10px;
@@ -346,21 +345,31 @@ menu {
 
 					li {
 						cursor: pointer;
-						white-space:nowrap;
 						position:relative;
-						
-						.lt-ie8 &.row, &{
+
+						.lt-ie8 &, &{
 							overflow:hidden;
 							margin:0;
 							padding:0;
 							line-height:12px;
 							height:12px;
-						}		
+							&.even {
+								margin-top:-1px;							
+							}
+						}	
+
+						.lt-ie8 & {
+							top:0px;
+							left:0px;
+							clear:both;
+							margin-top:-4px;
+							&.even {
+								margin-top:-3px;							
+							}							
+						}
 
 						&.even {
 							background:#e0e4e5;	
-							line-height:11px;
-							height:11px;
 						}
 
 						.annee {
@@ -391,12 +400,12 @@ menu {
 								top:0;
 								text-align:left;
 								
-								span {
-									height:11px;
-									line-height:11px;
-									overflow:hidden;
-									padding:0;
-									margin:0;
+								i {
+									position:relative;
+									top:0px;
+									left:0px;
+									margin:0px;
+									height:0px;
 								}
 							}									
 						}
@@ -713,9 +722,11 @@ menu {
 
 
 .revoir-view {
+	position:relative;
 	.annees, .annee {
 		position:absolute;
-		top:0;
-		left:0;			
+		top:0px;
+		left:0px;
+		margin:0px;			
 	}
 }

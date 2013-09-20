@@ -13,7 +13,7 @@ RevoirCtrl = ($scope, $http, $location)->
     # Visible years
     $scope.visibles = ()-> 
         return [] unless $scope.annee? and $scope.annees?
-        annees =_.keys($scope.annees)
+        annees =_.keys($scope.annees)    
         annees.slice 0, annees.indexOf($scope.annee) + 1
 
 RevoirCtrl.$inject = ['$scope', '$http', '$location']
