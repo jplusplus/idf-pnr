@@ -631,15 +631,31 @@ menu {
 		}
 		
 		.choose {
-			width:110px;
-			height:110px;
+			width:120px;
+			height:120px;
 			display:inline-block;
 			margin-bottom:-4px;
-			font-weight:bold;
 			border:2px dashed $text-color;
 			position:relative;
-			padding:10px;
 			overflow:hidden;
+			
+
+			h4 {
+				display:table-cell;
+				vertical-align: middle;
+				text-align:center;
+				position:absolute;
+				top:0;
+				bottom:0;
+				left:0;
+				right:0;
+				padding:10px 0;
+				margin:0;
+				font-size:100%;
+				line-height:150%;
+				font-weight:bold;
+			}
+
 		}
 
 		.bar {			

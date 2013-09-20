@@ -1,6 +1,6 @@
 <menu ng-controller="MenuCtrl">
 	<h1>
-		<a ng-href="#/">
+		<a href="#/">
 			<span class="sr-only">
 				Les Parcs naturels régionaux en Île-de-France
 			</span>
@@ -8,7 +8,7 @@
 	</h1>	
 	<ul class="links list-unstyled">
 		<li ng-class="{open: current == item}" class="{{item}} menu-part" ng-repeat="item in items">
-			<a class="heading" ng-href="#/{{item}}">{{item}}</a>
+			<a class="heading" href="#/{{item}}">{{item}}</a>
 			<div ng-include="view(item)"></div>			
 		</li>
 	</ul>
