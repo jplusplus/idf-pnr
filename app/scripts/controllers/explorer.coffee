@@ -13,9 +13,10 @@ ExplorerCtrl = ($scope, $routeParams, $http) ->
     $scope.metropoleStyle = ->
         style = $scope.get()
         return {} unless style?
-        top:   style.top
-        left:  style.left
-        width: $scope.data[$scope.parc].scale/100*style.width
+        top       : style.top
+        left      : style.left
+        width     : $scope.data[$scope.parc].scale/100*style.width
+        visibility: "visible"
 
 
 
