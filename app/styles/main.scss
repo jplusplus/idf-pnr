@@ -36,11 +36,14 @@ body {
 	z-index:$zindex-content;
 	width:$content-width;
 	height:$content-height;
+	position:relative;
+	margin:auto;
+	/*
 	margin-left:-1px*$content-width/2px;
 	margin-top:-1px*$content-height/2px;
 	position: absolute;
 	top:50%;
-	left:50%;
+	left:50%;*/
 }
 
 menu {
@@ -85,6 +88,7 @@ menu {
 		padding:0;
 		
 		.menu-part {
+			@include transition(height 0.4s linear);
 			z-index:$zindex-menu+20;
 			position:relative;
 			display:block;
@@ -95,8 +99,7 @@ menu {
 			height:$heading-height;			
 			text-align:center;
 			overflow:hidden;
-			@include transition(height 0.4s linear);
-			
+						
 			&.open {				
 				height:$content-height - ($heading-height*3) - 90;				
 			}
@@ -237,8 +240,16 @@ menu {
 
 			.menu-body {
 
+				margin:0;
+				padding:0;
+				
 				li {
 					margin:5px 10px;
+					
+					.lt-ie8 &{
+						margin-left:-30px;
+						margin-right:55px;
+					}
 					
 					&.active .btn.btn-default {
 						background:#a0adb0;
@@ -327,21 +338,42 @@ menu {
 					margin:0 20px;
 					position:relative;
 					
+
+					.lt-ie8 &{
+						margin-left:-30px;
+						margin-right:10px;
+					}		
+
 					li {
 						cursor: pointer;
-						padding:0;
-						margin:0;
-						line-height:12px;
 						white-space:nowrap;
+						position:relative;
 						
+						.lt-ie8 &.row, &{
+							overflow:hidden;
+							margin:0;
+							padding:0;
+							line-height:12px;
+							height:12px;
+						}		
+
 						&.even {
 							background:#e0e4e5;	
 							line-height:11px;
+							height:11px;
 						}
 
 						.annee {
 							text-align:right;
 							color:inherit;
+							
+							.lt-ie8 &{
+								position:absolute;
+								left:0;
+								top:0;
+								text-align:left;
+							}		
+
 						}
 
 						.count {
@@ -349,6 +381,24 @@ menu {
 							font-size:25px;
 							text-align:left;
 							letter-spacing:-1px;
+							
+							.lt-ie8 & {
+								height:11px;
+								line-height:11px;
+								overflow:hidden;
+								position:absolute;
+								left:50%;
+								top:0;
+								text-align:left;
+								
+								span {
+									height:11px;
+									line-height:11px;
+									overflow:hidden;
+									padding:0;
+									margin:0;
+								}
+							}									
 						}
 
 					}
@@ -359,7 +409,12 @@ menu {
 						top:-1px;
 						width:10px;
 						height:325px;
-						background:url("../images/revoir/slider-track.png") no-repeat;						
+						background:url("../images/revoir/slider-track.png") no-repeat;
+						
+						.lt-ie8 &{
+							left:140px;
+						}	
+
 						.ui-slider {
 							position:absolute;
 							left:1px;
@@ -562,6 +617,16 @@ menu {
 			left:0;
 			text-align:left;
 			padding-top:5px;
+		}
+
+		.choose, .bar {			
+			.lt-ie8 &{
+				display:inline;
+				&.bar {					
+					margin-bottom:1px;
+					margin-right:5px;
+				}
+			}				
 		}
 		
 		.choose {

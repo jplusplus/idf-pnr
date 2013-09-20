@@ -1,6 +1,6 @@
 ComparerCtrl = ($scope, $location, $http, $filter) ->
 	# Get the data object
-	$http.get("data/comparer.json").success (data)-> $scope.data = data       
+	$http.get("data/comparer.json").success (data)-> $scope.data = data
 	$scope.base   = "Île-de-France"
 	# Legend under the graph
 	$scope.legend =
@@ -8,11 +8,11 @@ ComparerCtrl = ($scope, $location, $http, $filter) ->
 		resistance  : "Taux de destruction des espaces naturels par artificialisation<br />ou mise en culture ou création de plan d'eau<br />entre 2000 et 2006 (%)",		
 		emplois     : "Evolution des taux d'emploi entre 1999 et 2009 (en points)"			
 	# Current theme ('comprendre' page)
-	$scope.theme  = $location.search().theme
+	$scope.theme  = $location.search().theme or "superficie"
 	$scope.region = $location.search().region
 	# Read the location's search to update the scope
 	$scope.$on '$routeUpdate', -> 
-		$scope.theme  = $location.search().theme
+		$scope.theme  = $location.search().theme or "superficie"
 		$scope.region = $location.search().region
 	# Return the region's values
 	$scope.get = (region=$scope.region, theme=$scope.theme)->

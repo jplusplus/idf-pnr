@@ -1,7 +1,8 @@
 'use strict'
 
 angular.module('idfPnrApp', ['ui.slider'])
-  .config ($routeProvider) ->
+  .config ['$routeProvider', '$locationProvider', ($routeProvider, $locationProvider) ->
+    $locationProvider.html5Mode false
     $routeProvider
       .when '/',
         templateUrl: 'views/main.html'        
@@ -30,3 +31,4 @@ angular.module('idfPnrApp', ['ui.slider'])
         slug: "revoir"
       .otherwise
         redirectTo: '/'
+  ]

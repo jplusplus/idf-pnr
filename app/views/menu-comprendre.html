@@ -7,31 +7,13 @@
 	</p>
 	<h4 class="top20">Choisissez une catégorie</h4>
 	<ul class="list-unstyled">
-		<li ng-class="{active: categorie == 'biodiversite'}">
-			<a class="btn btn-default btn-block btn-xs" ng-click="search('categorie', 'biodiversite')">
-				<span class="pic">
-					<img src="images/comprendre/pic_biodiversite-black.png" class="on"  />
-					<img src="images/comprendre/pic_biodiversite-white.png" class="off" />
-				</span>
-				Densité de population
-			</a>
-		</li>
 		<li ng-class="{active: categorie == 'densitepop'}">
 			<a class="btn btn-default btn-block btn-xs" ng-click="search('categorie', 'densitepop')">
 				<span class="pic">
 					<img src="images/comprendre/pic_densitepop-black.png" class="on"  />
 					<img src="images/comprendre/pic_densitepop-white.png" class="off" />
 				</span>
-				Zones d'activités
-			</a>
-		</li>
-		<li ng-class="{active: categorie == 'terroirs'}">
-			<a class="btn btn-default btn-block btn-xs" ng-click="search('categorie', 'terroirs')">
-				<span class="pic">
-					<img src="images/comprendre/pic_terroirs-black.png" class="on"  />
-					<img src="images/comprendre/pic_terroirs-white.png" class="off" />
-				</span>
-				Zone habitée
+				Densité de population
 			</a>
 		</li>
 		<li ng-class="{active: categorie == 'zoneactivite'}">
@@ -40,7 +22,7 @@
 					<img src="images/comprendre/pic_zoneactivite-black.png" class="on"  />
 					<img src="images/comprendre/pic_zoneactivite-white.png" class="off" />
 				</span>
-				Biodiversité florale
+				Zones d'activités
 			</a>
 		</li>
 		<li ng-class="{active: categorie == 'zonehabitee'}">
@@ -49,7 +31,16 @@
 					<img src="images/comprendre/pic_zonehabitee-black.png" class="on"  />
 					<img src="images/comprendre/pic_zonehabitee-white.png" class="off" />
 				</span>
-				Zone d'intérêt écologique
+				Zone habitée
+			</a>
+		</li>
+		<li ng-class="{active: categorie == 'biodiversite'}">
+			<a class="btn btn-default btn-block btn-xs" ng-click="search('categorie', 'biodiversite')">
+				<span class="pic">
+					<img src="images/comprendre/pic_biodiversite-black.png" class="on"  />
+					<img src="images/comprendre/pic_biodiversite-white.png" class="off" />
+				</span>
+				Biodiversité florale
 			</a>
 		</li>
 		<li ng-class="{active: categorie == 'zoneinteret'}">
@@ -57,6 +48,15 @@
 				<span class="pic">
 					<img src="images/comprendre/pic_zoneinteret-black.png" class="on"  />
 					<img src="images/comprendre/pic_zoneinteret-white.png" class="off" />
+				</span>
+				Zone d'intérêt écologique
+			</a>
+		</li>
+		<li ng-class="{active: categorie == 'terroirs'}">
+			<a class="btn btn-default btn-block btn-xs" ng-click="search('categorie', 'terroirs')">
+				<span class="pic">
+					<img src="images/comprendre/pic_terroirs-black.png" class="on"  />
+					<img src="images/comprendre/pic_terroirs-white.png" class="off" />
 				</span>
 				Le terroirs
 			</a>

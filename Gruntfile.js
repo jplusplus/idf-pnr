@@ -173,7 +173,7 @@ module.exports = function (grunt) {
       dist: {},
       server: {
         options: {
-          debugInfo: true
+          debugInfo: false // IE7 doesnt like it
         }
       }
     },

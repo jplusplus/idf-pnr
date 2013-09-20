@@ -2,42 +2,42 @@
 	<img src="./images/map_base-accueil.png" class="bg" />
 	<ul class="hotspots fg list-unstyled">
 		<li class="gatinais-francais">
-			<a ng-href="#/?parc=gatinais-francais">			
+			<a href="#/?parc=gatinais-francais">			
 				<span class="sr-only">
 					Gâtinais français
 				</span>
 			</a>
 		</li>
 		<li class="haute-vallee-de-chevreuse">
-			<a ng-href="#/?parc=haute-vallee-de-chevreuse">			
+			<a href="#/?parc=haute-vallee-de-chevreuse">			
 				<span class="sr-only">
 					Haute Vallée de Chevreuse
 				</span>
 			</a>
 		</li>
 		<li class="oise-pays-de-france">
-			<a ng-href="#/?parc=oise-pays-de-france">			
+			<a href="#/?parc=oise-pays-de-france">			
 				<span class="sr-only">
 					Oise - Pays de France
 				</span>
 			</a>
 		</li>
 		<li class="vexin-francais">
-			<a ng-href="#/?parc=vexin-francais">			
+			<a href="#/?parc=vexin-francais">			
 				<span class="sr-only">
 					Vexin français
 				</span>
 			</a>
 		</li>
 		<li class="brie-et-deux-morin">
-			<a ng-href="#/?parc=brie-et-deux-morin">			
+			<a href="#/?parc=brie-et-deux-morin">			
 				<span class="sr-only">
 					Brie et deux Morin
 				</span>
 			</a>
 		</li>
 		<li class="bocage-gatinais">
-			<a ng-href="#/?parc=bocage-gatinais">			
+			<a href="#/?parc=bocage-gatinais">			
 				<span class="sr-only">
 					Bocage gâtinais
 				</span>
@@ -45,7 +45,7 @@
 		</li>
 	</ul>
 	<div class="infobox fg" ng-show="parc">
-		<a ng-href="#/" class="close"></a>
+		<a href="#/" class="close"></a>
 		<h3>{{getParc().nom}}</h3>
 		<div class="row text-center text-indicator nowrap top05 bottom05">
 			<div class="col-xs-4">
@@ -64,6 +64,6 @@
 		<p>
 			{{getParc().fiche}}
 		</p>
-		<a class="btn btn-block btn-default" ng-href="#/explorer/?parc={{parc}}">Explorez ce Parc</a>		
+		<a class="btn btn-block btn-default" href="#/explorer/?parc={{parc}}">Explorez ce Parc</a>		
 	</div>
 </div>
