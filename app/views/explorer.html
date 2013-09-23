@@ -1,5 +1,31 @@
-<div class="explorer-view">
+<div class="explorer-view parc-{{parc}}">
 	<img ng-src="./images/map_base-accueil.png" class="bg" />
 	<img ng-src="./images/explorer/Zoom_{{parc}}.png" ng-show="parc" class="fg" />
 	<img ng-src="./images/explorer/{{metropole}}.png" class="fg metropole" ng-style="metropoleStyle()" ng-show="parc" />
+
+	<a class="parc-link" ng-show="parc == 'gatinais-francais'" href="http://www.parc-gatinais-francais.fr">
+		www.parc-gatinais-francais.fr
+	</a>
+
+	<a class="parc-link" ng-show="parc == 'haute-vallee-de-chevreuse'" href="http://www.parc-naturel-chevreuse.fr">
+		www.parc-naturel-chevreuse.fr
+	</a>
+
+	<a class="parc-link" ng-show="parc == 'oise-pays-de-france'" href="http://www.parc-oise-paysdefrance.fr">
+		www.parc-oise-paysdefrance.fr
+	</a>
+
+	<a class="parc-link" ng-show="parc == 'vexin-francais'" href="http://www.pnr-vexin-francais.fr">
+		www.pnr-vexin-francais.fr
+	</a>
+
+	<a class="parc-link" ng-show="parc == 'brie-et-deux-morin'" href="http://www.pnrbrie2morin.fr">
+		www.pnrbrie2morin.fr
+	</a>
+
+	<a class="parc-link" ng-show="parc == 'bocage-gatinais'" href="http://www.projet-pnr-bocage-gatinais.fr">
+		www.projet-pnr-bocage-gatinais.fr
+	</a>
+
 </div>
+

@@ -600,6 +600,22 @@ menu {
 		left:0;
 		visibility:hidden;
 	}
+
+	.parc-link {
+		position:absolute;
+		bottom:18px;
+		left:380px;		
+		z-index:$zindex-view+50;	
+	}
+
+	&.parc-bocage-gatinais .parc-link {
+		left:auto;
+		right:22px;
+	}
+
+	&.parc-brie-et-deux-morin .parc-link{
+		left:25px;
+	}
 }
 
 .comparer-view {
