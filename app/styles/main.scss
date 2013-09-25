@@ -375,6 +375,12 @@ menu {
 							background:#e0e4e5;	
 						}
 
+						&.disable {
+							.count, .annee {
+								color:#B0B5AF;
+							}
+						}
+
 						.annee {
 							text-align:right;
 							color:inherit;

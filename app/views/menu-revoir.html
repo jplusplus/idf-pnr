@@ -5,9 +5,12 @@
 	</p>
 	<div class="annees">
 		<ul class="list-unstyled">
-			<li ng-repeat="(annee, count) in annee.list" class="row" ng-class="{even: $index%2 == 0}" ng-click="search('annee', annee)">
+			<li ng-repeat="(ann, count) in annee.list" 
+				class="row" 
+				ng-class="{even: $index%2 == 0, disable: ann > annee.current }" 
+				ng-click="search('annee', ann)">
 				<span class="col-xs-5 annee">
-					{{annee}}
+					{{ann}}
 				</span>
 				<div class="col-xs-7 text-left count">
 					<span ng-repeat="i in range(count)">&bull;</span>
