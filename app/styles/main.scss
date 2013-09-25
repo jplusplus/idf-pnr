@@ -9,7 +9,8 @@ $menu-width:235px;
 
 $zindex-content:100;
 $zindex-view:$zindex-content+100;
-$zindex-menu:$zindex-view+100;
+$zindex-infobox:$zindex-view+100;
+$zindex-menu:$zindex-infobox+100;
 $zindex-spiner:$zindex-menu+100;
 
 a:focus {outline:none;}
@@ -524,6 +525,7 @@ menu {
 .main-view, .comprendre-view, .explorer-view {
 
 	.infobox {
+		z-index:$zindex-infobox;
 		position:absolute;
 		top:50%;
 		left:50%;

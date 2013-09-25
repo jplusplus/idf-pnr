@@ -1,44 +1,44 @@
-<div class="explorer-view parc-{{parc}}">
+<div class="explorer-view parc-{{zoom}}">
 	<img ng-src="./images/map_base-accueil.png" class="bg" />
 
 	<ul class="hotspots fg list-unstyled">
 		<li class="gatinais-francais">
-			<a ng-click="search('parc', 'gatinais-francais')">			
+			<a ng-click="search('zoom', 'gatinais-francais')">			
 				<span class="sr-only">
 					Gâtinais français
 				</span>
 			</a>
 		</li>
 		<li class="haute-vallee-de-chevreuse">
-			<a ng-click="search('parc', 'haute-vallee-de-chevreuse')">			
+			<a ng-click="search('zoom', 'haute-vallee-de-chevreuse')">			
 				<span class="sr-only">
 					Haute Vallée de Chevreuse
 				</span>
 			</a>
 		</li>
 		<li class="oise-pays-de-france">
-			<a ng-click="search('parc', 'oise-pays-de-france')">			
+			<a ng-click="search('zoom', 'oise-pays-de-france')">			
 				<span class="sr-only">
 					Oise - Pays de France
 				</span>
 			</a>
 		</li>
 		<li class="vexin-francais">
-			<a ng-click="search('parc', 'vexin-francais')">			
+			<a ng-click="search('zoom', 'vexin-francais')">			
 				<span class="sr-only">
 					Vexin français
 				</span>
 			</a>
 		</li>
 		<li class="brie-et-deux-morin">
-			<a ng-click="search('parc', 'brie-et-deux-morin')">			
+			<a ng-click="search('zoom', 'brie-et-deux-morin')">			
 				<span class="sr-only">
 					Brie et deux Morin
 				</span>
 			</a>
 		</li>
 		<li class="bocage-gatinais">
-			<a ng-click="search('parc', 'bocage-gatinais')">			
+			<a ng-click="search('zoom', 'bocage-gatinais')">			
 				<span class="sr-only">
 					Bocage gâtinais
 				</span>
@@ -46,30 +46,30 @@
 		</li>
 	</ul>
 	
-	<img ng-src="./images/explorer/Zoom_{{parc}}.png" imageonload ng-if="parc" class="fg" />
+	<img ng-src="./images/explorer/Zoom_{{zoom}}.png" imageonload ng-if="zoom" class="fg" />
 	<img ng-src="./images/explorer/{{metropole}}.png" imageonload class="fg metropole" ng-style="metropoleStyle()" ng-if="metropole && parc" />
 
-	<a class="parc-link" ng-show="parc == 'gatinais-francais'" href="http://www.parc-gatinais-francais.fr">
+	<a class="parc-link" ng-show="zoom == 'gatinais-francais'" href="http://www.parc-gatinais-francais.fr">
 		www.parc-gatinais-francais.fr
 	</a>
 
-	<a class="parc-link" ng-show="parc == 'haute-vallee-de-chevreuse'" href="http://www.parc-naturel-chevreuse.fr">
+	<a class="parc-link" ng-show="zoom == 'haute-vallee-de-chevreuse'" href="http://www.parc-naturel-chevreuse.fr">
 		www.parc-naturel-chevreuse.fr
 	</a>
 
-	<a class="parc-link" ng-show="parc == 'oise-pays-de-france'" href="http://www.parc-oise-paysdefrance.fr">
+	<a class="parc-link" ng-show="zoom == 'oise-pays-de-france'" href="http://www.parc-oise-paysdefrance.fr">
 		www.parc-oise-paysdefrance.fr
 	</a>
 
-	<a class="parc-link" ng-show="parc == 'vexin-francais'" href="http://www.pnr-vexin-francais.fr">
+	<a class="parc-link" ng-show="zoom == 'vexin-francais'" href="http://www.pnr-vexin-francais.fr">
 		www.pnr-vexin-francais.fr
 	</a>
 
-	<a class="parc-link" ng-show="parc == 'brie-et-deux-morin'" href="http://www.pnrbrie2morin.fr">
+	<a class="parc-link" ng-show="zoom == 'brie-et-deux-morin'" href="http://www.pnrbrie2morin.fr">
 		www.pnrbrie2morin.fr
 	</a>
 
-	<a class="parc-link" ng-show="parc == 'bocage-gatinais'" href="http://www.projet-pnr-bocage-gatinais.fr">
+	<a class="parc-link" ng-show="zoom == 'bocage-gatinais'" href="http://www.projet-pnr-bocage-gatinais.fr">
 		www.projet-pnr-bocage-gatinais.fr
 	</a>
 

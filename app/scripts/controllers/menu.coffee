@@ -4,6 +4,7 @@ MenuCtrl = ($scope, $route, $location, $http) ->
             $scope.categorie                = $location.search().categorie
             $scope.metropole                = $location.search().metropole
             $scope.parc                     = $location.search().parc
+            $scope.zoom                     = $location.search().zoom
             $scope.theme                    = $location.search().theme or "superficie"
             $scope.regionSelected["name-1"] = $location.search().region        
             $scope.annee.current            = $location.search().annee or "2012"
@@ -27,7 +28,7 @@ MenuCtrl = ($scope, $route, $location, $http) ->
         # Scope watchers
         # ──────────────────────────────────────────────────────────────────────
         # Unselect metropole when select a parc
-        $scope.$watch "parc", ()-> $location.search("metropole", null)
+        $scope.$watch "zoom", ()-> $location.search("metropole", null)
         $scope.$watch("regionSelected", (val)->             
             $scope.search("region", val["name-1"]) if val["name-1"]? 
         , true)
@@ -37,7 +38,7 @@ MenuCtrl = ($scope, $route, $location, $http) ->
                 $scope.search("annee", _.keys($scope.annee.list)[27-annee.tick])
         , true)
 
-        monitored = ["current", "categorie", "metropole", "parc", "theme", "regionSelected"]
+        monitored = ["categorie", "metropole", "zoom", "theme", "regionSelected"]
         # Add a loading state to the content
         # when the monitored values changed.        
         $scope.$watch monitored.join(" + "), -> $(".content").addClass("loading")                    
