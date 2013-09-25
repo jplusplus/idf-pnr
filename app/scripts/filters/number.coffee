@@ -9,4 +9,8 @@ angular.module('idfPnrApp').filter 'number', ()->
         x1 + x2          
     decimalSeparator = (n=0, dec=".")-> (n+"").replace /\./, dec
     # Combines the two functions
-    (input) -> decimalSeparator(thousandSeparator(1*input, " "), ",")
+    (input, round=2)-> 
+        return "0" if input is 0
+        pow = Math.pow(10, round)
+        input  = Math.round(input*pow) / pow
+        output = decimalSeparator(thousandSeparator(input, " "), ",")

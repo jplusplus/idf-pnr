@@ -19,6 +19,12 @@ ComparerCtrl = ($scope, $location, $http, $filter) ->
 		$scope.region = $location.search().region	
 		sortRegions()	
 
+	$scope.$watch "theme", (val)-> 
+		if val is "resistance" or val is "emplois"
+			$scope.decimals = 2 
+		else
+			$scope.decimals = 0
+
 	sortRegions = ()->
 		if $scope.data?	
 			sorted = _.filter $scope.data, (region)-> 

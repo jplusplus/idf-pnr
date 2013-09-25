@@ -12,7 +12,7 @@
 			<h4 ng-class="{outside: isOutside(base, theme) }">
 				{{base}}
 				<span class="indicator">
-					{{get(base, theme)|number}}
+					{{get(base, theme)|number:decimals}}
 					<span ng-show="get(base, theme) < 100">%</span>
 				</span>
 			</h4>
@@ -20,11 +20,11 @@
 		<div class="bar" ng-style="style(region, theme)" ng-show="region">
 			<h4 ng-class="{outside: isOutside(region, theme) }">
 				{{region}}
-				<span class="indicator">
-					{{get(region, theme)|number}}
+				<span class="indicator" ng-show="get(region, theme) != null">
+					{{get(region, theme)|number:decimals}}
 					<span ng-show="get(region, theme) < 100">%</span>
 				</span>
-				<span class="indicator" ng-hide="get(region, theme)">
+				<span class="indicator" ng-show="get(region, theme) == null">
 					N.C
 				</span>
 			</h4>

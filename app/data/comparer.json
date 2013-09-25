@@ -35,7 +35,7 @@
     "region":"Bourgogne",
     "superficie":9.02,
     "exploitation":3.98,
-    "resistance":null,
+    "resistance":0.00,
     "emplois":2.67,
     "habitants":71000
   },
@@ -176,7 +176,7 @@
     "habitants":306800
   },
   {
-    "region":"Rhone-Alpes",
+    "region":"Rhône-Alpes",
     "superficie":15.09,
     "exploitation":9.57,
     "resistance":0.02,
