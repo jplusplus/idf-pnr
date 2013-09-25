@@ -46,8 +46,8 @@
 		</li>
 	</ul>
 	
-	<img ng-src="./images/explorer/Zoom_{{parc}}.png" ng-if="parc" class="fg" />
-	<img ng-src="./images/explorer/{{metropole}}.png" class="fg metropole" ng-style="metropoleStyle()" ng-if="metropole && parc" />
+	<img ng-src="./images/explorer/Zoom_{{parc}}.png" imageonload ng-if="parc" class="fg" />
+	<img ng-src="./images/explorer/{{metropole}}.png" imageonload class="fg metropole" ng-style="metropoleStyle()" ng-if="metropole && parc" />
 
 	<a class="parc-link" ng-show="parc == 'gatinais-francais'" href="http://www.parc-gatinais-francais.fr">
 		www.parc-gatinais-francais.fr

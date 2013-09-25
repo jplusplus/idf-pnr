@@ -10,6 +10,7 @@ $menu-width:235px;
 $zindex-content:100;
 $zindex-view:$zindex-content+100;
 $zindex-menu:$zindex-view+100;
+$zindex-spiner:$zindex-menu+100;
 
 a:focus {outline:none;}
 a::-moz-focus-inner {border:0;}
@@ -47,6 +48,22 @@ body {
 	position: absolute;
 	top:50%;
 	left:50%;*/
+
+	.spiner {
+		z-index:$zindex-spiner;
+		position:absolute;
+		top:0;
+		bottom:0;
+		left:$menu-width;
+		right:0;
+		background:url("../images/spiner.gif") no-repeat center center;		
+		display:none;
+		@include opacity(0.8);
+	}
+
+	&.loading .spiner {
+		display:block;
+	}
 }
 
 menu {

@@ -1,6 +1,6 @@
 angular.module('idfPnrApp')
 	.filter 'slug', [() ->
-		slug = (value)->
+		slug = (value="")->
 			rExps = [
               re: /[\xC0-\xC6]/g
               ch: "A"

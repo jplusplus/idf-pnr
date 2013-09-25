@@ -28,7 +28,6 @@ MenuCtrl = ($scope, $route, $location, $http) ->
         # ──────────────────────────────────────────────────────────────────────
         # Unselect metropole when select a parc
         $scope.$watch "parc", ()-> $location.search("metropole", null)
-
         $scope.$watch("regionSelected", (val)->             
             $scope.search("region", val["name-1"]) if val["name-1"]? 
         , true)
@@ -37,6 +36,11 @@ MenuCtrl = ($scope, $route, $location, $http) ->
             if annee.tick isnt old.tick or not old.tick?
                 $scope.search("annee", _.keys($scope.annee.list)[27-annee.tick])
         , true)
+
+        monitored = ["current", "categorie", "metropole", "parc", "theme", "regionSelected"]
+        # Add a loading state to the content
+        # when the monitored values changed.        
+        $scope.$watch monitored.join(" + "), -> $(".content").addClass("loading")                    
         # Read the location's search to update the scope
         $scope.$on '$routeUpdate', readLoaction
         # Roote changed

@@ -1,4 +1,4 @@
 angular.module('idfPnrApp').directive 'imageonload', ->
     restrict: 'A'
     link: (scope, element)->        
-        element.bind 'load', -> console.log(1)
+        element.bind 'load error', -> $(".loading").removeClass("loading")
