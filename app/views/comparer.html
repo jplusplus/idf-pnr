@@ -24,6 +24,9 @@
 					{{get(region, theme)|number}}
 					<span ng-show="get(region, theme) < 100">%</span>
 				</span>
+				<span class="indicator" ng-hide="get(region, theme)">
+					N.C
+				</span>
 			</h4>
 		</div>
 		<div ng-hide="region" class="choose">
