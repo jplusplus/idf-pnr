@@ -7,7 +7,9 @@ angular.module('idfPnrApp', ['ui.slider'])
       '$location',
       ($rootScope, $location)->
         # Location available within templates
-        $rootScope.search = (what, val)=> $location.search(what, val);
+        $rootScope.search = (what, val, toggle=false)=> 
+          val = if toggle and $location.search()[what] is val then null else val
+          $location.search what, val
     ]
   )
   .config ['$routeProvider', '$locationProvider', ($routeProvider, $locationProvider) ->

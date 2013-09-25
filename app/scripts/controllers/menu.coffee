@@ -26,6 +26,9 @@ MenuCtrl = ($scope, $route, $location, $http) ->
         # ──────────────────────────────────────────────────────────────────────
         # Scope watchers
         # ──────────────────────────────────────────────────────────────────────
+        # Unselect metropole when select a parc
+        $scope.$watch "parc", ()-> $location.search("metropole", null)
+
         $scope.$watch("regionSelected", (val)->             
             $scope.search("region", val["name-1"]) if val["name-1"]? 
         , true)
