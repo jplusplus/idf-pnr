@@ -2,7 +2,7 @@
 	<img ng-src="./images/comparer/graphe_{{theme}}.png" imageonload class="bg" ng-show="theme" />		
 	<ul class="list-regions list-unstyled">
 		<li ng-repeat="reg in sortedRegions">
-			<a ng-click="search('region', reg)" href="">
+			<a ng-click="search('region', reg, false, reg != 'Île-de-France')" href="">
 				<span class="sr-only">{{reg}}</span>
 			</a>
 		</li>
