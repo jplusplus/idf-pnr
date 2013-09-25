@@ -152,7 +152,7 @@
     "habitants":507500
   },
   {
-    "region":"Pays-de-la-Loire",
+    "region":"Pays de la Loire",
     "superficie":1.53,
     "exploitation":17.6,
     "resistance":0.16,
@@ -168,7 +168,7 @@
     "habitants":85639
   },
   {
-    "region":"Provence-Alpes-Côte-d'Azur",
+    "region":"Provence-Alpes-Côte d'Azur",
     "superficie":21.13,
     "exploitation":23.35,
     "resistance":0.04,
