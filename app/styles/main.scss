@@ -153,6 +153,10 @@ menu {
 				}
 			}
 
+			.disable {
+				@include opacity(0.4);
+			}
+
 			.minimap-parc {
 				display:block;
 				margin:auto;

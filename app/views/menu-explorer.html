@@ -10,76 +10,78 @@
 	</h4>				
 	<ul class="minimap-parc list-unstyled" ng-class="parc">
 		<li class="gatinais-francais">
-			<a ng-click="search('parc', 'gatinais-francais')">
+			<a ng-click="search('parc', 'gatinais-francais', true)">
 				<span class="sr-only">Gâtinais français</span>
 			</a>
 		</li>
 		<li class="haute-vallee-de-chevreuse">
-			<a ng-click="search('parc', 'haute-vallee-de-chevreuse')">
+			<a ng-click="search('parc', 'haute-vallee-de-chevreuse', true)">
 				<span class="sr-only">Haute Vallée de Chevreuse</span>
 			</a>
 		</li>
 		<li class="oise-pays-de-france">
-			<a ng-click="search('parc', 'oise-pays-de-france')">
+			<a ng-click="search('parc', 'oise-pays-de-france', true)">
 				<span class="sr-only">Oise - Pays de France</span>
 			</a>
 		</li>
 		<li class="vexin-francais">
-			<a ng-click="search('parc', 'vexin-francais')">
+			<a ng-click="search('parc', 'vexin-francais', true)">
 				<span class="sr-only">Vexin français</span>
 			</a>
 		</li>
 		<li class="brie-et-deux-morin">
-			<a ng-click="search('parc', 'brie-et-deux-morin')">
+			<a ng-click="search('parc', 'brie-et-deux-morin', true)">
 				<span class="sr-only">Brie et deux Morin</span>
 			</a>
 		</li>
 		<li class="bocage-gatinais">
-			<a ng-click="search('parc', 'bocage-gatinais')">
+			<a ng-click="search('parc', 'bocage-gatinais', true)">
 				<span class="sr-only">Bocage gâtinais</span>
 			</a>
 		</li>
 	</ul>
-	<h4 class="">
-		<span class="badge">2</span>
-		Comparez avec une métropole
-	</h4>
-	<ul class="list-unstyled">
-		<li ng-class="{active: metropole == 'paris'}">
-			<a class="btn btn-default btn-block btn-xs" ng-click="search('metropole', 'paris', true)">
-				<span class="pic">
-					<img src="images/explorer/pic_paris.png" class="on"  />
-					<img src="images/explorer/pic_paris-white.png" class="off" />
-				</span>
-				Paris — 105 km<sup>2</sup>
-			</a>
-		</li>
-		<li ng-class="{active: metropole == 'marseille'}">
-			<a class="btn btn-default btn-block btn-xs" ng-click="search('metropole', 'marseille', true)">
-				<span class="pic">
-					<img src="images/explorer/pic_marseille.png" class="on"  />
-					<img src="images/explorer/pic_marseille-white.png" class="off" />
-				</span>
-				Marseille — 240 km<sup>2</sup>
-			</a>
-		</li>
-		<li ng-class="{active: metropole == 'madrid'}">
-			<a class="btn btn-default btn-block btn-xs" ng-click="search('metropole', 'madrid', true)">
-				<span class="pic">
-					<img src="images/explorer/pic_madrid.png" class="on"  />
-					<img src="images/explorer/pic_madrid-white.png" class="off" />
-				</span>
-				Madrid — 606 km<sup>2</sup>
-			</a>
-		</li>
-		<li ng-class="{active: metropole == 'berlin'}">
-			<a class="btn btn-default btn-block btn-xs" ng-click="search('metropole', 'berlin', true)">
-				<span class="pic">
-					<img src="images/explorer/pic_berlin.png" class="on"  />
-					<img src="images/explorer/pic_berlin-white.png" class="off" />
-				</span>
-				Berlin — 892 km<sup>2</sup>
-			</a>
-		</li>
-	</ul>
+	<div ng-class="{disable: parc == undefined}">
+		<h4 class="">
+			<span class="badge">2</span>
+			Comparez avec une métropole
+		</h4>
+		<ul class="list-unstyled">
+			<li ng-class="{active: metropole == 'paris'}">
+				<a class="btn btn-default btn-block btn-xs" ng-click="search('metropole', 'paris', true, parc != undefined)">
+					<span class="pic">
+						<img src="images/explorer/pic_paris.png" class="on"  />
+						<img src="images/explorer/pic_paris-white.png" class="off" />
+					</span>
+					Paris — 105 km<sup>2</sup>
+				</a>
+			</li>
+			<li ng-class="{active: metropole == 'marseille'}">
+				<a class="btn btn-default btn-block btn-xs" ng-click="search('metropole', 'marseille', true, parc != undefined)">
+					<span class="pic">
+						<img src="images/explorer/pic_marseille.png" class="on"  />
+						<img src="images/explorer/pic_marseille-white.png" class="off" />
+					</span>
+					Marseille — 240 km<sup>2</sup>
+				</a>
+			</li>
+			<li ng-class="{active: metropole == 'madrid'}">
+				<a class="btn btn-default btn-block btn-xs" ng-click="search('metropole', 'madrid', true, parc != undefined)">
+					<span class="pic">
+						<img src="images/explorer/pic_madrid.png" class="on"  />
+						<img src="images/explorer/pic_madrid-white.png" class="off" />
+					</span>
+					Madrid — 606 km<sup>2</sup>
+				</a>
+			</li>
+			<li ng-class="{active: metropole == 'berlin'}">
+				<a class="btn btn-default btn-block btn-xs" ng-click="search('metropole', 'berlin', true, parc != undefined)">
+					<span class="pic">
+						<img src="images/explorer/pic_berlin.png" class="on"  />
+						<img src="images/explorer/pic_berlin-white.png" class="off" />
+					</span>
+					Berlin — 892 km<sup>2</sup>
+				</a>
+			</li>
+		</ul>
+	</div>
 </div>
