@@ -1,4 +1,4 @@
-angular.module('idfPnrApp').directive "france", [()-> 
+angular.module('idfPnrApp').directive "france", ['$filter', ($filter)-> 
     scope:
         # What to when clicking a region
         click: "&"
