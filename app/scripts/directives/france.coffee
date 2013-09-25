@@ -22,9 +22,9 @@ angular.module('idfPnrApp').directive "france", ['$filter', ($filter)->
                 # Colorize regions
                 map.getLayer('regions').style 
                     fill: (region, path) ->
-                        switch region["name-1"]
-                            when "Île-de-France" then "#E71A0F"
-                            when scope.value["name-1"] then "#98b800"
+                        switch $filter("slug")(region["name-1"])
+                            when $filter("slug")("Île-de-France") then "#E71A0F"
+                            when $filter("slug")(scope.value["name-1"]) then "#98b800"
                             else "#e0e4e5"
             # Update the draw when the value changes
             scope.$watch "value", draw, true
@@ -41,7 +41,7 @@ angular.module('idfPnrApp').directive "france", ['$filter', ($filter)->
                 draw()
                 # Bind layer click
                 map.getLayer('regions').on 'click', (data)->  
-                    data = {} if data["name-1"] is "Île-de-France"
+                    return if data["name-1"] is "Île-de-France"
                     # Do we received a click function?
                     scope.click() if typeof(scope.click) is "function"
                     # Set a model value matching to the clicked region
