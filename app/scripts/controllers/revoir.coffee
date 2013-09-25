@@ -1,10 +1,10 @@
 RevoirCtrl = ($scope, $http, $location)->                     
     readLocation = ->            
         if $location.search().annee?                
-            $scope.annee = $location.search().annee or "1968"
+            $scope.annee = $location.search().annee or "2012"
         else
-            $scope.annee = "1968"
-            $location.search("annee", "1968")
+            $scope.annee = "2012"
+            $location.search("annee", "2012")
     readLocation()
     # Get the parc count
     $http.get("data/revoir.json").success (data)-> $scope.annees = _.countBy data, "annee"               

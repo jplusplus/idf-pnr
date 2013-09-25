@@ -6,7 +6,7 @@ MenuCtrl = ($scope, $route, $location, $http) ->
             $scope.parc                     = $location.search().parc
             $scope.theme                    = $location.search().theme or "superficie"
             $scope.regionSelected["name-1"] = $location.search().region        
-            $scope.annee.current            = $location.search().annee
+            $scope.annee.current            = $location.search().annee or "2012"
             $scope.annee.tick               = 27-_.keys($scope.annee.list).indexOf($location.search().annee)
         # ──────────────────────────────────────────────────────────────────────
         # Scope attributes    
