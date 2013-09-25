@@ -1,6 +1,15 @@
 'use strict'
 
 angular.module('idfPnrApp', ['ui.slider'])
+  .run(
+    [             
+      '$rootScope', 
+      '$location',
+      ($rootScope, $location)->
+        # Location available within templates
+        $rootScope.search = (what, val)=> $location.search(what, val);
+    ]
+  )
   .config ['$routeProvider', '$locationProvider', ($routeProvider, $locationProvider) ->
     $locationProvider.html5Mode false
     $routeProvider

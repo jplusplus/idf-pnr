@@ -1,5 +1,51 @@
 <div class="explorer-view parc-{{parc}}">
 	<img ng-src="./images/map_base-accueil.png" class="bg" />
+
+	<ul class="hotspots fg list-unstyled">
+		<li class="gatinais-francais">
+			<a ng-click="search('parc', 'gatinais-francais')">			
+				<span class="sr-only">
+					Gâtinais français
+				</span>
+			</a>
+		</li>
+		<li class="haute-vallee-de-chevreuse">
+			<a ng-click="search('parc', 'haute-vallee-de-chevreuse')">			
+				<span class="sr-only">
+					Haute Vallée de Chevreuse
+				</span>
+			</a>
+		</li>
+		<li class="oise-pays-de-france">
+			<a ng-click="search('parc', 'oise-pays-de-france')">			
+				<span class="sr-only">
+					Oise - Pays de France
+				</span>
+			</a>
+		</li>
+		<li class="vexin-francais">
+			<a ng-click="search('parc', 'vexin-francais')">			
+				<span class="sr-only">
+					Vexin français
+				</span>
+			</a>
+		</li>
+		<li class="brie-et-deux-morin">
+			<a ng-click="search('parc', 'brie-et-deux-morin')">			
+				<span class="sr-only">
+					Brie et deux Morin
+				</span>
+			</a>
+		</li>
+		<li class="bocage-gatinais">
+			<a ng-click="search('parc', 'bocage-gatinais')">			
+				<span class="sr-only">
+					Bocage gâtinais
+				</span>
+			</a>
+		</li>
+	</ul>
+	
 	<img ng-src="./images/explorer/Zoom_{{parc}}.png" ng-show="parc" class="fg" />
 	<img ng-src="./images/explorer/{{metropole}}.png" class="fg metropole" ng-style="metropoleStyle()" ng-show="parc" />
 

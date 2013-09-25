@@ -1,4 +1,4 @@
-ExplorerCtrl = ($scope, $routeParams, $http) ->
+ExplorerCtrl = ($scope, $routeParams, $http, $location) ->
     # Get the data object
     $http.get("data/explorer.json").success (data)-> $scope.data = data        
     $scope.parc      = $routeParams.parc     
@@ -20,5 +20,5 @@ ExplorerCtrl = ($scope, $routeParams, $http) ->
 
 
 
-ExplorerCtrl.$inject = ['$scope', '$routeParams', '$http']
+ExplorerCtrl.$inject = ['$scope', '$routeParams', '$http', '$location']
 angular.module('idfPnrApp').controller 'ExplorerCtrl', ExplorerCtrl

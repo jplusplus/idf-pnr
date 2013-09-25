@@ -1,5 +1,12 @@
 <div class="comparer-view region-{{region}} theme-{{theme}}">
 	<img ng-src="./images/comparer/graphe_{{theme}}.png" class="bg" ng-show="theme" />		
+	<ul class="list-regions list-unstyled">
+		<li ng-repeat="reg in sortedRegions">
+			<a ng-click="search('region', reg)" href="">
+				<span class="sr-only">{{reg}}</span>
+			</a>
+		</li>
+	</ul>
 	<div class="viz">
 		<div class="bar idf" ng-style="style(base, theme)">
 			<h4 ng-class="{outside: isOutside(base, theme) }">

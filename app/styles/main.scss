@@ -11,6 +11,9 @@ $zindex-content:100;
 $zindex-view:$zindex-content+100;
 $zindex-menu:$zindex-view+100;
 
+a:focus {outline:none;}
+a::-moz-focus-inner {border:0;}
+
 body {
 	background: #eee;
 	
@@ -490,7 +493,7 @@ menu {
 
 
 
-.main-view {
+.main-view, .comprendre-view, .explorer-view {
 
 	.infobox {
 		position:absolute;
@@ -546,6 +549,7 @@ menu {
 			display:block;
 			
 			a {
+				cursor: pointer;
 				width:100%;
 				height:100%;
 				display:block;
@@ -620,11 +624,29 @@ menu {
 
 .comparer-view {
 
+	.list-regions {
+		z-index:$zindex-view+20;
+		position:absolute;
+		top:57px;
+		left:30px;
+
+		li {
+			height:22px;
+			width:600px;
+			a {
+				display:block;
+				height:100%;
+				width:100%;
+			}
+		}
+	}
+
 	&.theme-emplois .viz {
 		bottom:400px;
 		left:20px;
 		right:auto;
 	}
+
 
 	.viz {
 		position:absolute;
@@ -636,6 +658,7 @@ menu {
 		text-align:center;
 		
 		.legend {
+			z-index:$zindex-view+30;
 			font-weight:bold;
 			font-size:13px;
 			position:absolute;
@@ -645,7 +668,8 @@ menu {
 			padding-top:5px;
 		}
 
-		.choose, .bar {			
+		.choose, .bar {		
+			z-index:$zindex-view+30;
 			.lt-ie8 &{
 				display:inline;
 				&.bar {					

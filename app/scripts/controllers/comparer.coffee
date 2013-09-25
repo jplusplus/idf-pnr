@@ -1,6 +1,8 @@
 ComparerCtrl = ($scope, $location, $http, $filter) ->
 	# Get the data object
-	$http.get("data/comparer.json").success (data)-> $scope.data = data
+	$http.get("data/comparer.json").success (data)-> 
+		$scope.data = data
+		sortRegions()
 	$scope.base   = "Île-de-France"
 	# Legend under the graph
 	$scope.legend =
@@ -8,12 +10,25 @@ ComparerCtrl = ($scope, $location, $http, $filter) ->
 		resistance  : "Taux de destruction des espaces naturels par artificialisation<br />ou mise en culture ou création de plan d'eau<br />entre 2000 et 2006 (%)",		
 		emplois     : "Evolution des taux d'emploi entre 1999 et 2009 (en points)"			
 	# Current theme ('comprendre' page)
-	$scope.theme  = $location.search().theme or "superficie"
-	$scope.region = $location.search().region
+	$scope.theme  		 = $location.search().theme or "superficie"
+	$scope.region 		 = $location.search().region
+	$scope.sortedRegions = []
 	# Read the location's search to update the scope
 	$scope.$on '$routeUpdate', -> 
 		$scope.theme  = $location.search().theme or "superficie"
-		$scope.region = $location.search().region
+		$scope.region = $location.search().region	
+		sortRegions()	
+
+	sortRegions = ()->
+		if $scope.data?	
+			sorted = _.filter $scope.data, (region)-> 
+				# Remove non-number elements
+				angular.isNumber(region[$scope.theme])
+			# Use the current theme to sort the region 
+			sorted = _.sortBy sorted, (region)-> -1*region[$scope.theme]
+			# Only takes the region name
+			$scope.sortedRegions = _.pluck sorted, "region"
+
 	# Return the region's values
 	$scope.get = (region=$scope.region, theme=$scope.theme)->
 		data = _.find $scope.data, (val)->
@@ -45,9 +60,6 @@ ComparerCtrl = ($scope, $location, $http, $filter) ->
 		if $scope.get() < 0
 			offset = $scope.style().width
 			right: (400 - offset)/2 + offset
-
-
-
 
 
 ComparerCtrl.$inject = ['$scope', '$location', '$http', '$filter']

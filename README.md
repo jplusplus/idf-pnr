@@ -13,6 +13,13 @@
 
 ## Installation
 
+Install command line tools:
+
+```
+sudo npm install -g grunt-cli bower  
+gem install compass
+```
+
 Install dependancies with NPM and Bower.
 
 ```

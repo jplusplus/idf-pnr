@@ -17,7 +17,7 @@ angular.module('idfPnrApp').directive "france", [()->
         pre: (scope, iElement, iAttrs, controller)->  
             # Create the map within iElement with the same width
             # (the height will be calculate later)
-            map = $K.map( iElement, iElement.width(), iElement.width()*0.4 )
+            map = $K.map( iElement, iElement.width(), iElement.width()*0.4 )            
             draw = ->
                 # Colorize regions
                 map.getLayer('regions').style 

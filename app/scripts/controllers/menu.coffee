@@ -43,8 +43,6 @@ MenuCtrl = ($scope, $route, $location, $http) ->
         # ──────────────────────────────────────────────────────────────────────
         # Scope methods
         # ──────────────────────────────────────────────────────────────────────
-        # Location helper 
-        $scope.search = (what, val)=> $location.search(what, val)
         # View path
         $scope.view = (item)-> "views/menu-#{item}.html"
         # Create an arbitrary array
