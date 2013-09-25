@@ -3,7 +3,7 @@
     "slug":"gatinais-francais",
     "nom":"Gâtinais français",
     "date_creation":"Créé en 1999",
-    "Population_2009":82800,
+    "habitants":82800,
     "superficie_km2":755,
     "fiche":"Surnommé le \"pays des mille clairières et du grès\", le parc est traversé par 3 rivières et présente des paysages contrastés : clairières, forêts, affleurements et chaos gréseux. Occupé à 55% par des terres agricoles et à 33% par des bois et forêts, son sol sablonneux est idéal pour les cultures de plantes médicinales et d’orge. La \"gâtine\", bière locale, est réalisée à partir d'orge et de miel, les deux symboles du logo du Parc."
   },
@@ -11,7 +11,7 @@
     "slug":"haute-vallee-de-chevreuse",
     "nom":"Haute Vallée de Chevreuse",
     "date_creation":"Créé en 1985",
-    "Population_2009":118100,
+    "habitants":118100,
     "superficie_km2":633,
     "fiche":"Partie intégrante du grand massif forestier de la forêt de Rambouillet qui constitue 40 % de son territoire, 90 % du Parc est occupé par des forêts, des espaces naturels ou agricoles. Parmi son patrimoine architectural remarquable, on peut noter les châteaux de Dampierre, Breteuil, Janvry ou de la Madeleine ou encore les abbayes de Port-Royal des Champs et des Vaux de Cernay."
   },
@@ -19,7 +19,7 @@
     "slug":"oise-pays-de-france",
     "nom":"Oise - Pays de France",
     "date_creation":"Créé en 2004",
-    "Population_2009":100700,
+    "habitants":100700,
     "superficie_km2":575,
     "fiche":"A cheval entre Picardie et Île-de-France, le parc intègre les trois grands massifs forestiers de Chantilly, Halatte et Ermenonville, ce qui lui a valu son premier nom : « Parc naturel régional des trois forêts ». Plus de 100 monuments classés ou inscrits composent son patrimoine, dont le château de Chantilly, la cathédrale de Senlis ou les abbayes de Royaumont, du Moncel et de Chaalis."
   },
@@ -27,7 +27,7 @@
     "slug":"vexin-francais",
     "nom":"Vexin français",
     "date_creation":"Créé en 1995",
-    "Population_2009":87100,
+    "habitants":87100,
     "superficie_km2":716,
     "fiche":"Son intérêt réside autant dans la diversité des constructions que dans la présence d'espèce végétales protégées. Il compte en effet pas moins de 120 églises et 80 châteaux. Ses principaux sites touristiques sont Auvers-sur-Oise, le village des peintres, les châteaux de la Roche-Guyon et d'Ambleville ou encore le domaine de Villarceaux."
   },
@@ -35,7 +35,7 @@
     "slug":"brie-et-deux-morin",
     "nom":"Brie et deux Morin",
     "date_creation":"En projet",
-    "Population_2009":160000,
+    "habitants":160000,
     "superficie_km2":1344,
     "fiche":"Avec un patrimoine historique de 74 monuments et 8 sites naturels classés, le futur parc voit les 2/3 de son territoire occupé par l'agriculture. Il souhaite protéger ses 1000 km de canaux et rivières, son patrimoine du XIXe siècle lié à la gestion de l'eau, ainsi que son rôle clé dans la mlgration de certaines espèces."
   },
@@ -43,7 +43,7 @@
     "slug":"bocage-gatinais",
     "nom":"Bocage gâtinais",
     "date_creation":"En réflexion",
-    "Population_2009":60600,
+    "habitants":60600,
     "superficie_km2":1110,
     "fiche":"Situé entre les vallées du Loing, de l’Yonne et de la Cléry, le Bocage Gâtinais est au carrefour des Régions Ile-de-France, Centre et Bourgogne. Ses hameaux, ses plateaux agricoles et ses paysages à la fois diversifiés et préservés lui confèrent une identité territoriale forte. Face aux dynamiques périurbaines qui participent à sa transformation, les acteurs locaux se mobilisent autour d’un projet de PNR pour promouvoir un développement durable et respectueux de cette identité."
   }
