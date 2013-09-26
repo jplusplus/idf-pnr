@@ -25,7 +25,7 @@ angular.module('idfPnrApp').directive "france", ['$filter', ($filter)->
                         switch $filter("slug")(region["name-1"])
                             when $filter("slug")("Île-de-France") then "#E71A0F"
                             when $filter("slug")(scope.value["name-1"]) then "#98b800"
-                            else "#e0e4e5"
+                            else "#D3D8DA"
             # Update the draw when the value changes
             scope.$watch "value", draw, true
             # Load the SVG            
@@ -37,7 +37,7 @@ angular.module('idfPnrApp').directive "france", ['$filter', ($filter)->
                     'name'  : 'regions'
                     'styles':
                         'stroke-width': 0                           
-                        'fill'        : '#e0e4e5'         
+                        'fill'        : '#D3D8DA'         
                 draw()
                 # Bind layer click
                 map.getLayer('regions').on 'click', (data)->  
