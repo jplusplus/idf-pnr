@@ -38,10 +38,10 @@ MenuCtrl = ($scope, $route, $location, $http) ->
                 $scope.search("annee", _.keys($scope.annee.list)[27-annee.tick])
         , true)
 
-        monitored = ["categorie", "metropole", "zoom"]
-        # Add a loading state to the content
-        # when the monitored values changed.        
-        $scope.$watch monitored.join(" + "), -> $(".content").addClass("loading")                    
+        # When the monitored values changed...
+        $scope.$watch ["categorie", "metropole", "zoom"].join(" + "), (val)->             
+            # Add a loading state to the content
+            $(".content").addClass("loading") if val
         # Read the location's search to update the scope
         $scope.$on '$routeUpdate', readLoaction
         # Roote changed
