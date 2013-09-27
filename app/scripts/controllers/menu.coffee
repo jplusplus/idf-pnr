@@ -46,6 +46,8 @@ MenuCtrl = ($scope, $route, $location, $http) ->
         $scope.$on '$routeUpdate', readLoaction
         # Roote changed
         $scope.$on '$routeChangeSuccess', (next)->
+            # Read the location's search to update the scope
+            readLoaction()
             # Update the current slug 
             $scope.current = $route.current.slug
         # ──────────────────────────────────────────────────────────────────────
