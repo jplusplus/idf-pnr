@@ -20,8 +20,10 @@ ComparerCtrl = ($scope, $location, $http, $filter) ->
 		sortRegions()	
 
 	$scope.$watch "theme", (val)-> 
-		if val is "resistance" or val is "emplois"
+		if val is "resistance"
 			$scope.decimals = 2 
+		else if val is "emplois"
+			$scope.decimals = 1
 		else
 			$scope.decimals = 0
 

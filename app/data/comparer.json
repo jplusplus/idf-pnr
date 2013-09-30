@@ -1,7 +1,7 @@
 [
   {
     "region":"Alsace",
-    "superficie":2285.1831857128,
+    "superficie":22.851831857128,
     "exploitation":5.03261882572227,
     "resistance":0.00461257521330251,
     "habitants":200919,
@@ -9,7 +9,7 @@
   },
   {
     "region":"Aquitaine",
-    "superficie":1007.7410804858,
+    "superficie":10.077410804858,
     "exploitation":15.7422969187675,
     "resistance":0.153420673245828,
     "habitants":93613,
@@ -17,7 +17,7 @@
   },
   {
     "region":"Auvergne",
-    "superficie":2572.55568919154,
+    "superficie":25.7255568919154,
     "exploitation":7.19278881530537,
     "resistance":0.0284057205205651,
     "habitants":182040,
@@ -25,7 +25,7 @@
   },
   {
     "region":"Basse-Normandie",
-    "superficie":2399.77648309921,
+    "superficie":23.9977648309921,
     "exploitation":14.7656130706978,
     "resistance":0.0125730757399331,
     "habitants":174051,
@@ -33,7 +33,7 @@
   },
   {
     "region":"Bourgogne",
-    "superficie":902.803491924089,
+    "superficie":9.02803491924089,
     "exploitation":3.98432397126061,
     "resistance":0,
     "habitants":50663,
@@ -41,7 +41,7 @@
   },
   {
     "region":"Bretagne",
-    "superficie":458.204494940455,
+    "superficie":4.58204494940455,
     "exploitation":8.22368421052632,
     "resistance":0.0921268187174677,
     "habitants":63021,
@@ -49,7 +49,7 @@
   },
   {
     "region":"Centre",
-    "superficie":1008.69752529033,
+    "superficie":10.0869752529033,
     "exploitation":33.2897684839432,
     "resistance":0.0608571790397773,
     "habitants":140356,
@@ -57,7 +57,7 @@
   },
   {
     "region":"Champagne-Ardenne",
-    "superficie":980.952867259119,
+    "superficie":9.80952867259119,
     "exploitation":7.20741075463172,
     "resistance":0.066735745786659,
     "habitants":132685,
@@ -65,15 +65,15 @@
   },
   {
     "region":"Corse",
-    "superficie":4241.5144048212,
+    "superficie":42.415144048212,
     "exploitation":2.69277845777234,
     "resistance":0.0133057474503732,
     "habitants":30778,
     "emplois":-5.16125510563346
   },
   {
-    "region":"Franche-Comté",
-    "superficie":1234.90837395908,
+    "region":"Franche-Comte",
+    "superficie":12.3490837395908,
     "exploitation":2.91434363912823,
     "resistance":0.0287762308701704,
     "habitants":99442,
@@ -89,15 +89,15 @@
   },
   {
     "region":"Haute-Normandie",
-    "superficie":653.422711285741,
+    "superficie":6.53422711285741,
     "exploitation":16.262482168331,
     "resistance":0.26486796314732,
     "habitants":62172,
     "emplois":-1.83307881134616
   },
   {
-    "region":"Île-de-France",
-    "superficie":1815.73311556293,
+    "region":"Ile-de-France",
+    "superficie":18.1573311556293,
     "exploitation":77.6086956521739,
     "resistance":0.0562014069358493,
     "habitants":305898,
@@ -105,7 +105,7 @@
   },
   {
     "region":"Languedoc-Roussillon",
-    "superficie":1277.85196778327,
+    "superficie":12.7785196778327,
     "exploitation":4.21440261865794,
     "resistance":0.0579509635269683,
     "habitants":84792,
@@ -113,7 +113,7 @@
   },
   {
     "region":"Limousin",
-    "superficie":2329.74107250053,
+    "superficie":23.2974107250053,
     "exploitation":6.63942798774259,
     "resistance":0.017887246613759,
     "habitants":62096,
@@ -121,7 +121,7 @@
   },
   {
     "region":"Lorraine",
-    "superficie":1517.79362591399,
+    "superficie":15.1779362591399,
     "exploitation":9.91323610854717,
     "resistance":0.175503235717419,
     "habitants":160744,
@@ -137,7 +137,7 @@
   },
   {
     "region":"Midi-Pyrenees",
-    "superficie":1953.82880787327,
+    "superficie":19.5382880787327,
     "exploitation":8.59248606866798,
     "resistance":0.0325909642837023,
     "habitants":175523,
@@ -145,15 +145,15 @@
   },
   {
     "region":"Nord-Pas-de-Calais",
-    "superficie":2389.1187815977,
+    "superficie":23.891187815977,
     "exploitation":20.184361093452,
     "resistance":0.199327526132452,
     "habitants":536175,
     "emplois":-4.48686716607394
   },
   {
-    "region":"Pays de la Loire",
-    "superficie":863.779575451721,
+    "region":"Pays-de-la-Loire",
+    "superficie":8.63779575451721,
     "exploitation":20.843949044586,
     "resistance":0.20600756318717,
     "habitants":202477,
@@ -161,15 +161,15 @@
   },
   {
     "region":"Picardie",
-    "superficie":250.616374903599,
+    "superficie":2.50616374903599,
     "exploitation":67.8571428571429,
     "resistance":0.255098515461149,
     "habitants":82721,
     "emplois":4.36778837787972
   },
   {
-    "region":"Provence-Alpes-Côte d'Azur",
-    "superficie":2135.39385170568,
+    "region":"Provence-Alpes-Cote-d'Azur",
+    "superficie":21.3539385170568,
     "exploitation":20.7878922768751,
     "resistance":0.0322262757570342,
     "habitants":279948,
@@ -177,7 +177,7 @@
   },
   {
     "region":"Rhône-Alpes",
-    "superficie":1512.75584672034,
+    "superficie":15.1275584672034,
     "exploitation":9.08844275637548,
     "resistance":0.0171613586216286,
     "habitants":273039,
