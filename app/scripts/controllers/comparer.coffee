@@ -6,7 +6,7 @@ ComparerCtrl = ($scope, $location, $http, $filter) ->
 	$scope.base   = "Île-de-France"
 	# Legend under the graph
 	$scope.legend =
-		exploitation: "Part des exploitations agricoles en grandes cultures en 2010 (%)<br />* Données manquantes pour les parcs<br />PréAlpes d'Azur et Ardennes, créés en 2011-2012",
+		exploitation: "Part des exploitations agricoles en grandes cultures, dans les Parcs naturels régionaux, en 2010 (%)<br />* Données manquantes pour les parcs<br />PréAlpes d'Azur et Ardennes, créés en 2011-2012",
 		resistance  : "Taux de destruction des espaces naturels par artificialisation<br />ou mise en culture ou création de plan d'eau<br />entre 2000 et 2006 (%)",		
 		emplois     : "Evolution des taux d'emploi entre 1999 et 2009 (en points)"			
 	# Current theme ('comprendre' page)
